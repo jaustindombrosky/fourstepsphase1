@@ -1,9 +1,6 @@
 
 
-.no-padding-left-right{
-	padding-left: 0px;
-	padding-right: 0px;
-}
+
 
 .snapshot-ul{
     padding-left: 0px;
@@ -292,7 +289,17 @@
 
 /* strategy-buttons */
 
-
+@media only screen and (max-width: 740px){
+    .strategy-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 805px;
+        justify-content: center;
+        margin: auto;
+        grid-gap: 50px;
+        margin-top: 50px;
+    }
+}
 
 @media only screen and (max-width: 630px){
     .graph-container{
@@ -304,17 +311,6 @@
         grid-gap: 20px;
         margin-top: 50px;
         margin-bottom: 50px;
-    }
-
-    .strategy-container{
-        display: grid;
-        grid-template-columns: 1fr;
-        max-width: 805px;
-        justify-content: center;
-    
-        margin: auto;
-        grid-gap: 50px;
-        margin-top: 50px;
     }
 
 
