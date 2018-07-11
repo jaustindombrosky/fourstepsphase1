@@ -1,0 +1,78 @@
+
+
+
+.foursteps-header{
+    max-height: 50px;
+}
+
+.logo-container{
+    min-width: 100px;
+}
+
+.section-parent{
+    padding-top: 20px;
+    background: #E5E5E5;
+    padding-bottom: 20px;
+}
+
+
+.section-child{
+    width: 90%;
+    background: white;
+    margin: auto;
+}
+
+.section-title{
+    margin-left: 5%;
+    height: 20px;
+}
+
+.navtabs-container{
+    display: flex;
+    width: 100%;
+}
+
+.navtabs-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid;
+    background: #E5E5E5;
+}
+
+.navtabs-child-selected{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    border-color: #929292;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+
+}
+
+.nav-child-selected a {
+    text-decoration: none;
+}
+
+.child-section-wrapper{
+    padding: 50px;
+    border-color: #929292;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+}
+
+@media only screen and (max-width: 765px){
+    .section-child{
+        width: 100%;
+    }
+
+    .child-section-wrapper{
+        padding: 40px;
+    }
+}
