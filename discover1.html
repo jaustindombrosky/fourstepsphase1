@@ -9,13 +9,14 @@
 
     <link rel="icon" type="image/jpg" href=“favicon”>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/discover.css">
+    <link rel="stylesheet" type="text/css" href="assets/global.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-default">
+    <div class="container-fluid no-padding-left-right foursteps-header">
+        <nav class="navbar  navbar-default">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -23,7 +24,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <div class="navbar-brand">Joseph "Austin" Dombrosky</div>
+              <div class="navbar-brand">
+                  <img class="logo-container" src="./assets/images/placeholders/FourStepsLogoLandon.svg"/>
+              </div>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
@@ -34,39 +37,148 @@
             </div>
           </div>
         </nav>
-        <div class="row">
-            <div class="col-sm-8" id="contact">
-                <h2>Contact</h2>
-                <hr>
-                <form action="#">
-                    <span>Name</span><br>
-                    <input id="name" type="text" name="name" value="John Smith">
-                    <br>
-                    <span>Email</span><br>
-                    <input id="email" type="text" name="email" value="example@gmail.com">
-                    <br>
-                    <span>Message</span><br>
-                    <input id="message" type="text">
-                    <br>
-                    <input id="submit" type="submit" value="Submit">
-                </form> 
-            </div>
-            <div class="col-sm-4" id="connect">
-                <h3>Connect with Me</h3>
-                <hr>
-                <a href="https://github.com/jaustindombrosky" target="_blank"><img src="assets/images/if_github-square-social-media_764894.png" height="51"/>
-                </a>
-                <a href="https://www.linkedin.com/in/austin-dombrosky-378b01153/" target="_blank"><img src="assets/images/if_square-linkedin_317725.png" height="51"/>
-                </a>
-                <a href="https://stackoverflow.com/users/9226589/jaustindombrosky" target="_blank"><img src="assets/images/if_stackoverflow-square-social-media_764927.png" height="51"/>
-                </a>
-            </div>
-        </div>
-        <div class="row"> 
-            <div class="col-md-12" id="footer">© Copyright 2018 Joseph "Austin" Dombrosky</div>
-        </div>
 
 
+        <div class="section-parent">
+
+        <!-- <label class="section-title">Discover</label> -->
+
+        <div class="section-child">
+
+            <nav class="navtabs-container">
+                
+                <div class="navtabs-child-selected">
+                    <label>Discover</label>
+                </div>
+                <a class="navtabs-child" href="./plan2.html">
+                    <label>Plan</label>
+                </a>
+                <a class="navtabs-child" href="./automate4.html">
+                    <label>Automate</label>
+                </a>
+                <a class="navtabs-child" href="./live3.html">
+                    <label>Live</label>
+                </a>
+            </nav>
+
+            <div class="child-section-wrapper">
+                    <div class="financial-shot-con">
+                        <h4 class="discover-main-title">Financial Snapshot</h4>
+                        <hr>
+                        <div class="snapshot-progress-container">
+                            <ul class="snapshot-ul">
+                                <li class="snapshot-li-item">
+                                    <label>Assets</label>
+                                    <span class="snapshot-li-progress" />
+                                </li>
+                                <li class="snapshot-li-item">
+                                    <label>Liabilities</label>
+                                    <span class="snapshot-li-progress" />
+                                </li>
+                                <li class="snapshot-li-item">
+                                        <label>Networth</label>
+                                        <span class="snapshot-li-progress" />
+                                </li>
+                            </ul>
+                            <ul class="snapshot-ul" >
+                                    <li class="snapshot-li-item">
+                                        <label>Income</label>
+                                        <span class="snapshot-li-progress" />
+                                    </li>
+                                    <li class="snapshot-li-item">
+                                        <label>Expenses</label>
+                                        <span class="snapshot-li-progress" />
+                                    </li>
+                                    <li class="snapshot-li-item">
+                                            <label>Net Cash Flow</label>
+                                            <span class="snapshot-li-progress" />
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="checklist-con">
+                        <!-- <h4 class="checklist-title">Checklist</h4> -->
+                            <div class="strategy-container">
+                                <div>
+                                    <h4 class="center-text">Defensive Checklist</h4>
+                                    <hr>
+                                    <!-- <div class="row"> -->
+                                        <div class="strategy-list-con">
+                                                <div class="strategy-item">
+                                                    <button class="strategy-btn-personal-emergency-fund-active"></button>
+                                                    <!-- <label>Emergency Fund</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <button class="strategy-btn-debt-elimination-active"></button>
+                                                    <!-- <label>Debt Elimination</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <button class="strategy-btn-life-insurance-active"></button>
+                                                    <!-- <label>Life Insurance</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <button class="strategy-btn-disability-insurance-active"></button>
+                                                    <!-- <label>Disability Insurance</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <button class="strategy-btn-health-insurance-active"></button>
+                                                    <!-- <label>Health Insurance</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <button class="strategy-btn-long-term-care-active"></button>
+                                                    <!-- <label>Longterm Health</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <button class="strategy-btn-auto-insurance-active"></button>
+                                                    <!-- <label>Auto Insurance</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <button class="strategy-btn-mortgage-insurance-active"></button>
+                                                    <!-- <label>Mortgage Insurance</label> -->
+                                                </div>
+                                        </div>
+                                    <!-- </div> -->
+                                </div>
+                                <div>
+                                    <h4 class="center-text">Offensive Checklist</h4>
+                                    <hr>
+                                    <!-- <div class="row"> -->
+                                            <div class="strategy-list-con">
+                                                    <div class="strategy-item">
+                                                        <button class="strategy-btn-diversification-plan-active"></button>
+                                                        <!-- <label>Diversification</label> -->
+                                                    </div>
+                                                    <div class="strategy-item">
+                                                        <button class="strategy-btn-major-purchase-active"></button>
+                                                        <!-- <label>Major Purchase Plan</label> -->
+                                                    </div>
+                                                    <div class="strategy-item">
+                                                        <button class="strategy-btn-tax-planning-active"></button>
+                                                        <!-- <label>Tax Planning</label> -->
+                                                    </div>
+                                                    <div class="strategy-item">
+                                                        <button class="strategy-btn-rate-of-return-active"></button>
+                                                        <!-- <label>Rate Of Return</label> -->
+                                                    </div>
+                                                    <div class="strategy-item">
+                                                        <button class="strategy-btn-fees-and-commissions-active"></button>
+                                                        <!-- <label>Fees & Commission</label> -->
+                                                    </div>
+                                            </div>
+                                        <!-- </div> -->
+                                </div>
+                            </div>
+                    </div>
+                    <div class="graph-container">
+                        <div class="landons-border">
+                            <image src="./assets/images/placeholders/discovergraph1.svg" />
+                        </div>
+                        <div class="landons-border">
+                            <image src="./assets/images/placeholders/discovergraph2.svg" />
+                        </div>
+                    </div>
+            </div>
+    </div>
     </div>
 
 </body>

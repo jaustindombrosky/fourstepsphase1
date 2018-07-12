@@ -1,10 +1,10 @@
 body {
-	background-image: url("images/concrete-texture.png");
 	height: 100%;
 }
 
 .container {
 	height: 100%;
+	border: 1px solid black;
 }
 
 a {
@@ -29,6 +29,7 @@ a:hover {
 .navbar-header {
 	text-align: center;
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	width: 100%;
 }
 
 .navbar-header span {
@@ -330,5 +331,8 @@ ul {
 	    border-radius: 3px;
 	}
 
-
 }
+
+
+
+
