@@ -1,3 +1,6 @@
+
+
+var ctx = document.getElementById('projectionWithFourSteps').getContext('2d');
 var ctx2 = document.getElementById('projectionWithoutFourSteps').getContext('2d');
 console.log('with')
 var projectionWithoutFourSteps = new Chart(ctx2, {
@@ -60,7 +63,6 @@ var projectionWithoutFourSteps = new Chart(ctx2, {
 
 });
 
-var ctx = document.getElementById('projectionWithFourSteps').getContext('2d');
 console.log('with')
 var projectionWithFourSteps = new Chart(ctx, {
     type: 'line',
@@ -83,14 +85,10 @@ var projectionWithFourSteps = new Chart(ctx, {
         }]
     },
     options: {
-        color: function(context) {
-            var index = context.dataIndex;
-            var value = context.dataset.data[index];
-            return value < 0 ? 'red' :  // draw negative values in red
-                index % 2 ? 'blue' :    // else, alternate values in blue and green
-                'green';
-        },
+        width:500,
+        height:300,
         responsive: true,
+        maintainAspectRatio: true,
         legend: {
             display: false
         },
@@ -121,6 +119,8 @@ var projectionWithFourSteps = new Chart(ctx, {
     }
 
 });
+
+
 
 
 
@@ -211,5 +211,14 @@ function handleProgressBars(array){
 }
 
 
+
+// function beforePrintHandler () {
+//     let Chart = projectionWithoutFourSteps;
+//     for (var id in Chart.instances) {
+//       Chart.instances[id].resize()
+//     }
+//   }
+
+// window.onbeforeprint = beforePrintHandler()
 window.onload = handleProgressBars(progressArray);
 

@@ -126,9 +126,11 @@
     background-color: white;
 }
 
-/* .chart-item-container{
-    max-width: 340px;
-} */
+
+.chart-item{
+    position: relative;
+    height: inherit;
+}
 
 
 /* strategy-buttons */
@@ -296,7 +298,6 @@
 /* strategy-buttons */
 
 
-
 @media only screen and (max-width: 872px){
     .graph-container{
         width: 100%;
@@ -308,6 +309,9 @@
         grid-gap: 20px;
         margin-top: 50px;
         margin-bottom: 50px;
+    }
+    .chart-wrapper{
+        position: relative; height:40vh; width:80vw
     }
 }
 
