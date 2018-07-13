@@ -1,6 +1,3 @@
-
-
-
 var ctx2 = document.getElementById('projectionWithoutFourSteps').getContext('2d');
 console.log('with')
 var projectionWithoutFourSteps = new Chart(ctx2, {
@@ -124,3 +121,95 @@ var projectionWithFourSteps = new Chart(ctx, {
     }
 
 });
+
+
+
+
+
+//Progress Bars For Snapshot
+
+let assets = {
+    name: 'Assets',
+    id: 'assets-percentage',
+    className: 'assets-bar',
+    value: Math.floor((Math.random() * 100) + 0)
+}
+
+let liabilities = {
+    name: 'Liabilites',
+    id: 'liabilities-percentage',
+    className: 'liabilities-bar',
+    value: Math.floor((Math.random() * 100) + 0)
+}
+
+let networth = {
+    name: 'Networth',
+    id: 'networth-percentage',
+    className: 'networth-bar',
+    value: Math.floor((Math.random() * 100) + 0)
+}
+
+let income = {
+    name: 'Income',
+    id: 'income-percentage',
+    className: 'income-bar',
+    value: Math.floor((Math.random() * 100) + 0)
+}
+
+let expenses = {
+    name: 'Expenses',
+    id: 'expenses-percentage',
+    className: 'percentage-bar',
+    value: Math.floor((Math.random() * 100) + 0)
+}
+
+let netcashflow = {
+    name: 'Net Cash Flow',
+    id: 'netcashflow-percentage',
+    className: 'netcashflow-bar',
+    value: Math.floor((Math.random() * 100) + 0)
+}
+
+let progressArray = [assets, liabilities, networth, income, expenses, netcashflow];
+
+
+
+
+
+function makeProgressBar(name, id, className, value, color){
+    let div = `<div class="progress-bar ${className}" role="progressbar"
+    aria-valuenow="${value}" aria-valuemin="${value}" aria-valuemax="100" style="width:${value}%">
+    ${value}% Complete (${name})
+    </div>`
+    className = `.${className}`;
+    document.getElementById(id).innerHTML = div;
+    document.querySelector(className).style.backgroundColor = color;
+}
+
+
+function between(x, min, max){
+    console.log(x >= min && x <= max)
+    return x >= min && x <= max
+}
+
+function handleProgressBars(array){
+    array.forEach((object, index) => {
+        let {name, id, className, value} = object;
+        console.log(object)
+        let color;
+        if(between(value, 1, 25)){
+            color = '#E54D60'; //Red
+        } else if(between(value, 25, 50)){
+            color = "#FCBB55"; //Orange
+        } else if(between(value, 50, 75)){
+            color = "#09BEA8"; //Green
+        } else if(between(value, 75, 100)){
+            color = "#00B8D0" //Blue
+        }
+        makeProgressBar(name, id, className, value, color)
+    })
+}
+
+
+window.onload = handleProgressBars(progressArray);
+
