@@ -66,14 +66,40 @@
                         <h4 class="discover-main-title">Financial Snapshot</h4>
                         <hr>
                         <div class="snapshot-progress-container">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                            <!-- <div class="progress">
+                                <div id="assets-percentage" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
                                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
                                 40% Complete (Assets)
                                 </div>
+                            </div> -->
+
+                            <div class="progress" id="assets-percentage">
+
                             </div>
                             
-                            <div class="progress">
+
+                            <div class="progress" id="liabilities-percentage">
+
+                            </div>
+
+
+
+                            <div class="progress" id="networth-percentage">
+
+                            </div>
+
+                            <div class="progress" id="income-percentage">
+
+                            </div>
+
+                            <div class="progress" id="expenses-percentage">
+
+                            </div>
+
+                            <div class="progress" id="netcashflow-percentage">
+
+                            </div>
+                            <!-- <div class="progress">
                                 <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
                                 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
                                 50% Complete (Liabilities)
@@ -85,9 +111,9 @@
                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
                                 60% Complete (Networth)
                                 </div>
-                            </div>
+                            </div> -->
                             
-                            <div class="progress">
+                            <!-- <div class="progress">
                                 <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
                                 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
                                 70% Complete (Income)
@@ -106,7 +132,7 @@
                                 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
                                 70% Complete (Net Cash Flow)
                                 </div>
-                            </div>
+                            </div> -->
                     </div>
                     </div>
                       
@@ -201,6 +227,8 @@
             </div>
     </div>
     </div>
+    <script src="./js/charts/snapshot.js" />
     <script  src="./js/charts/projectionCharts.js" />
+    
 </body>
 </html>
