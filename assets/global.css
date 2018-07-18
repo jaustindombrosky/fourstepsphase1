@@ -1,7 +1,4 @@
-
-@import url(https://fonts.googleapis.com/css?family=Poppins);
-@import url(https://fonts.googleapis.com/css?family=Libre+Franklin);
-
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Poppins:400,500,600,700,900');
 
 
 
@@ -163,6 +160,9 @@ a { color: inherit; }
     min-height: 40px;
     display: flex;
     align-items: center;
+    font-weight: bold;
+    color: #707070;
+    font-family: 'Poppins', 'sans-serif'
 }
 
 
