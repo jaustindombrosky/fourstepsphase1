@@ -47,9 +47,8 @@
         <div class="container-fluid no-padding-left-right">
 
             <nav class="navtabs-container">
-                
-                <div class="navtabs-child-selected">
-                    <label>Discover</label>
+                <div class="navtabs-child-selected" onclick="toggleSideBar()" id="discover-tab">
+                    <label class="discover-label">Discover <span class="discover-drop-arrow">▼</span></label>
                 </div>
                 <a class="navtabs-child" href="./plan2.html">
                     <label>Plan</label>
@@ -61,8 +60,25 @@
                     <label>Live</label>
                 </a>
             </nav>
+            <nav class="navtabs-sub-con">
+                <div class="navtabs-sub-child">
+                    <label>Connect Accounts</label>
+                </div>
+                <div class="navtabs-sub-child">
+                    <label>General Info</label>
+                </div>
+                <div class="navtabs-sub-child">
+                    <label>Budget</label>
+                </div>
+                <div class="navtabs-sub-child">
+                    <label> Assets & Liabilities</label>
+                </div>
+                <div class="navtabs-sub-child">
+                    <label>Insurance</label>
+                </div>
+            </nav>
             <div class="container-flex no-padding-left-right">
-                <section class=" discover-sidebar landons-border2">
+                <section id="sidebar" class="discover-sidebar">
                         <ul id="mySidenav" class="sidenav">
                                 <li> <span></span> Connect Accounts</li>
                                 <li> <span></span>General Info</li>
@@ -76,7 +92,10 @@
                 </section>
                 <section class="content-container landons-border2">
                     <div class="content-wrapper">
-                            <div class="row card">
+
+
+
+                            <div class="card">
                                 <div class="title-wrapper">
                                     <label class="card-title">Become a FourSteps Member</label>
                                 </div>
@@ -114,6 +133,30 @@
                                             </div>
                                         </div>
                                     </div>
+                            </div>
+                            <div class="card">
+                                <div id="graph-projections-parent" class="card-content-group">
+                                    <div class="card-content-column">
+                                        <div class="title-wrapper">
+                                                <label class="card-title">Your Current Projection</label>
+                                        </div>
+                                        <div class="card-content-column-child">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="card-content-column">
+                                        <div class="title-wrapper">
+                                                <label class="card-title">Your Projection with FourSteps</label>
+                                        </div>
+                                        <div class="card-content-column-child">
+
+                                        </div>
+                                    </div>
+    
+          
+                                </div>
+
+
                             </div>
                     </div>
                                           
