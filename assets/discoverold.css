@@ -1,0 +1,414 @@
+
+
+
+
+
+
+/* NEW STUFF */
+.discover-sidebar{
+    height: calc(100vh - 90px);
+}
+.navbar-default{
+    border-color: transparent;
+}
+
+.redColor{
+    color: #D25956;
+}
+
+
+.snapshot-ul{
+    padding-left: 0px;
+}
+
+.snapshot-progress-container{
+    width: 100%;
+    max-width: 430px
+}
+
+.networth-stat-row{
+    display: flex;
+    justify-content: space-between;
+    background: #D5D5D5;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.assets-stat-row{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.column-wrapper h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* .landons-border{
+	border: 1px solid black;
+} */
+
+
+.card-title{
+    font-family: 'Poppins', 'sans-serif';
+    color: #4BB484;
+    font-weight: bolder;
+    margin-top: 0px;
+}
+
+.card-subtitle{
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: bolder;
+    margin-top: 0px;
+    color: #4AAEB5;
+}
+
+.title-wrapper{
+    max-height: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+}
+
+
+.discover-networth-graph-con{
+    display: block;
+    background: #D5D5D5;
+    width: 100%;
+    position: relative;
+    height: 200px;
+}
+
+.landons-border2{
+	border: 1px solid red;
+}
+
+.checklist-title{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.center-text{
+	text-align: center;
+}
+
+.circle-strategy-btn{
+	width: 100%;
+	height: 100%;
+}
+
+.financial-shot-title{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}	
+
+.financial-shot-con{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+
+.checklist-con{
+	margin-top: 20px;
+}
+
+.snapshot-li-progress{
+	height: 5px;
+	width: 60%;
+	background: black;
+}
+
+.snapshot-li-item{
+	display: flex;
+	white-space: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.strategy-list-con {
+    width: 100%;
+    justify-content: center;
+    display: grid;       
+    grid-template:  repeat(auto-fit, 70px) / repeat(auto-fit, 70px);
+    grid-gap: 20px;
+}
+
+.strategy-btn{
+	background-size: 100%;
+	background-position: 50%;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	transition: 0.2s ease-in-out;
+	border: 0px;
+	background: grey;
+}
+
+.strategy-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70px;
+    height: 70px;
+}
+
+.strategy-list-con label{
+    text-align: center;
+	font-size: 10px;
+    margin: 0px;
+    white-space: nowrap
+}
+
+.strategy-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 805px;
+    justify-content: center;
+
+    margin: auto;
+    grid-gap: 15%;
+    margin-top: 50px;
+}
+
+
+.graph-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 805px;
+    justify-content: center;
+    margin: auto;
+    grid-gap: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.assets-bar{
+    background-color: white;
+}
+
+
+.chart-item{
+    position: relative;
+    height: inherit;
+}
+
+
+/* strategy-buttons */
+
+/* DEFENSIVE */
+    .strategy-btn-debt-elimination-active{
+        background-image: url('./images/defensivechecklist/DebtElimination.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+    .strategy-btn-personal-emergency-fund-active{
+        background-image: url('./images/defensivechecklist/PersonalEmergencyFund.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+
+    .strategy-btn-life-insurance-active{
+        background-image: url('./images/defensivechecklist/LifeInsurance.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+    .strategy-btn-disability-insurance-active{
+        background-image: url('./images/defensivechecklist/DisabilityInsurance.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+
+    .strategy-btn-health-insurance-active{
+        background-image: url('./images/defensivechecklist/HealthInsurance.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+    .strategy-btn-long-term-care-active{
+        background-image: url('./images/defensivechecklist/LongtermCare.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+    .strategy-btn-long-term-care-active{
+        background-image: url('./images/defensivechecklist/LongtermCare.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+    .strategy-btn-auto-insurance-active{
+        background-image: url('./images/defensivechecklist/AutoInsurance.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+    .strategy-btn-mortgage-insurance-active{
+        background-image: url('./images/defensivechecklist/MortgageInsurance.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+/* OFFENSIVE */
+
+    .strategy-btn-tax-planning-active{
+        background-image: url('./images/offensivechecklist/TaxPlanning.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+    .strategy-btn-major-purchase-active{
+        background-image: url('./images/offensivechecklist/MajorPurchase.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+    .strategy-btn-rate-of-return-active{
+        background-image: url('./images/offensivechecklist/RateofReturn.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+    .strategy-btn-fees-and-commissions-active{
+        background-image: url('./images/offensivechecklist/FeesandCommissions.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+    .strategy-btn-diversification-plan-active{
+        background-image: url('./images/offensivechecklist/DiversificationPlan.png');
+        background-size: 100%;
+        background-position: 50%;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+        border: 0px;
+    }
+
+
+
+
+@media only screen and (max-width: 872px){
+    .graph-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 805px;
+        justify-content: center;
+        margin: auto;
+        grid-gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .chart-wrapper{
+        position: relative; height:40vh; width:80vw
+    }
+}
+
+@media only screen and (max-width: 740px){
+    .strategy-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 805px;
+        justify-content: center;
+        margin: auto;
+        grid-gap: 50px;
+        margin-top: 50px;
+    }
+}
+
+
+
+@media only screen and (max-width: 421px){
+
+    .strategy-item{
+        width: 50px;
+        height: 50px;
+    }
+        .strategy-list-con {
+        width: 100%;
+        justify-content: center;
+        display: grid;       
+        grid-template:  repeat(auto-fit, 50px) / repeat(auto-fit, 50px);
+        grid-gap: 20px;
+    }
+}
