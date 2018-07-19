@@ -1,0 +1,92 @@
+.snapshot-live-container{
+    width: 100%;
+    /* max-width: 1000px */
+}
+
+.backgroundcolor{
+  background-color: lightgrey;
+}
+
+.shadow {
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         5px 5px 8px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.navbar-margins{
+  margin-left: 51px;
+  margin-right: 50px;
+}
+
+/* emergency fund */
+.strategy-btn-emergencyfund-plan-active{
+    background-image: url('./images/defensivechecklist/PersonalEmergencyFund.png');
+    background-size: 100%;
+    background-position: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    border: 0px;
+}
+
+/*  debt elimination*/
+.strategy-btn-debtelimination-plan-active{
+    background-image: url('./images/defensivechecklist/DebtElimination.png');
+    background-size: 100%;
+    background-position: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    border: 0px;
+}
+/*  debt elimination*/
+.strategy-btn-homeinsurance-plan-active{
+    background-image: url('./images/defensivechecklist/Home Insurance.png');
+    background-size: 100%;
+    background-position: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    border: 0px;
+}
+
+.strategy-btn-small-plan-active{
+    background-image: url('./images/defensivechecklist/small.png');
+    background-size: 100%;
+    background-size: 40px auto;
+    background-position: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    border: 0px;
+}
+
+/* credit card */
+.strategy-btn-credit-plan-active{
+    background-image: url('./images/defensivechecklist/Credit Score Check.png');
+    background-size: 100%;
+    background-size: 40px auto;
+    background-position: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    border: 0px;
+}
+
+/* auto loan */
+.strategy-btn-auto-plan-active{
+    background-image: url('./images/defensivechecklist/AutoInsurance.png');
+    background-size: 100%;
+    background-size: 40px auto;
+    background-position: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    border: 0px;
+}

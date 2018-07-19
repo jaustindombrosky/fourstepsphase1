@@ -36,7 +36,7 @@
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
-}	
+}
 
 .financial-shot-con{
 	display: flex;
@@ -66,7 +66,7 @@
 .strategy-list-con {
     width: 100%;
     justify-content: center;
-    display: grid;       
+    display: grid;
     grid-template:  repeat(auto-fit, 70px) / repeat(auto-fit, 70px);
     grid-gap: 20px;
 }
@@ -104,7 +104,7 @@
     justify-content: center;
 
     margin: auto;
-    grid-gap: 15%;
+    grid-gap: 10%;
     margin-top: 50px;
 }
 
@@ -297,6 +297,16 @@
     }
 }
 
+
+    .strategy-container-new{
+
+        margin-top: 30px;
+    }
+
+.strategy-container-addclass{
+      margin-top:-100px;
+}
+
 @media only screen and (max-width: 630px){
     .graph-container{
         display: grid;
@@ -310,7 +320,7 @@
     }
 
 
-}   
+}
 
 @media only screen and (max-width: 421px){
 
@@ -321,7 +331,7 @@
         .strategy-list-con {
         width: 100%;
         justify-content: center;
-        display: grid;       
+        display: grid;
         grid-template:  repeat(auto-fit, 50px) / repeat(auto-fit, 50px);
         grid-gap: 20px;
     }
