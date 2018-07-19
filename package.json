@@ -1,0 +1,22 @@
+{
+  "name": "fourstepsphase1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaustindombrosky/fourstepsphase1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaustindombrosky/fourstepsphase1/issues"
+  },
+  "homepage": "https://github.com/jaustindombrosky/fourstepsphase1#readme",
+  "dependencies": {
+    "graph": "^0.2.0"
+  }
+}
