@@ -3,6 +3,35 @@
     --LibreFranklin: 'Libre Franklin', 'sans-serif';
     --strategy-btn-width: 70px;
     --strategy-btn-height: 70px;
+    --connect-accounts-icon: url('../assets/images/discover/connect-accounts-icon.svg');
+    --general-info-icon: url('../assets/images/discover/general-info-icon.svg');
+    --budget-icon: url('../assets/images/discover/budget-icon.svg');
+    --assets-liabilities-icon: url('../assets/images/discover/assets-liabilities-icon.svg');
+    --insurance-icon: url('../assets/images/discover/insurance-icon.svg');
+    --major-purchase: url('../assets/images/offensivechecklist/major-purchase.svg');
+    --major-purchase-disabled: url('../assets/images/offensivechecklist/major-purchase-disabled.svg');
+    --personal-checking-icon: url('../assets/images/discover/personal-checking-icon.svg');
+    --personal-savings-icon: url('../assets/images/discover/personal-savings-icon.svg');
+    --diversification-plan: url('../assets/images/offensivechecklist/diversification-plan.svg');
+    --diversification-plan-disabled: url('../assets/images/offensivechecklist/diversification-plan-disabled.svg');
+    --stocks-icon: url('../assets/images/discover/stocks-icon.svg');
+    --ira-icon: url('../assets/images/discover/ira-icon.svg');
+    --personal-emergency-fund: url('../assets/images/defensivechecklist/personal-emergency-fund.svg');
+    --personal-emergency-fund-disabled: url('../assets/images/defensivechecklist/personal-emergency-fund-disabled.svg');
+    --fees-and-commissions: url('../assets/images/offensivechecklist/fees-and-commissions.svg');
+    --fees-and-commissions-disabled: url('../assets/images/offensivechecklist/fees-and-commissions-disabled.svg');
+    --health-insurance: url('../assets/images/defensivechecklist/health-insurance.svg');
+    --health-insurance-disabled: url('../assets/images/defensivechecklist/health-insurance-disabled.svg');
+    --life-insurance: url('../assets/images/defensivechecklist/life-insurance.svg');
+    --life-insurance-disabled: url('../assets/images/defensivechecklist/life-insurance-disabled.svg');
+    --hsa-icon: url('../assets/images/discover/hsa-icon.svg');
+    --auto-loan-icon: url('../assets/images/discover/auto-loan-icon.svg');
+    --student-loan-icon: url('../assets/images/discover/student-loan-icon.svg');
+    --disability-insurance: url('../assets/images/defensivechecklist/disability-insurance.svg');
+    --disability-insurance-disabled: url('../assets/images/defensivechecklist/disability-insurance-disabled.svg');
+    --debt-elimination: url('../assets/images/defensivechecklist/debt-elimination.svg');
+    --debt-elimination-disabled: url('../assets/images/defensivechecklist/debt-elimination-disabled.svg');
+
 }
 
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Poppins:400,500,600,700,900');
@@ -74,32 +103,31 @@
     height: 30px;
     margin-right: 10px;
     border-radius: 50%;
-    background: black;
 }
 
 /* Connect Accounts Span */
 #mySidenav li:nth-child(1) span{
-    background: #DB505E;
+    background-image: var(--connect-accounts-icon);
 }
 
 /* General Info Span */
 #mySidenav li:nth-child(2) span{
-    background: #F8BD00;
+    background-image: var(--general-info-icon);
 }
 
 /* Budget Span */
 #mySidenav li:nth-child(3) span{
-    background: #F8BD00;
+    background-image: var(--budget-icon);
 }
 
-/* Budget Span */
+/* Assets & Liabilities Span */
 #mySidenav li:nth-child(4) span{
-    background: #DB505E;
+    background-image: var(--assets-liabilities-icon);
 }
 
-/* Budget Span */
+/* Insurance Span */
 #mySidenav li:nth-child(5) span{
-    background: #F8BD00;
+    background-image: var(--insurance-icon);
 }
 
 .sidebar-stats{
@@ -266,8 +294,6 @@
     width: 100%;
 }
 
-
-
 .card-combined-content-child{
     padding-top: 15px;
     padding-bottom: 10px;
@@ -361,7 +387,6 @@
     height: 30px;
     margin-right: 10px;
     border-radius: 50%;
-    background: black;
     box-shadow: var(--dropShadowValue);
 }
 
@@ -375,50 +400,50 @@
 
 /*Personal Checking Icon*/
 .card-content-column-child .networth-table tr:nth-child(1) th span{
-    background-color: #F8BD00;
+    background-image: var(--personal-checking-icon);
 }
 /*Personal Checking Icon*/
 
 /*Personal Savings Icon*/
     .card-content-column-child .networth-table tr:nth-child(2) th span{
-        background-color: #39B6D6;
+        background-image: var(--personal-savings-icon);
     }
 /*Personal Savings Icon*/
 
 /*IRA Icon*/
     .card-content-column-child .networth-table tr:nth-child(3) th span{
-        background-color: #F8BD00;
+        background-image: var(--ira-icon);
     }
 /*IRA Icon*/
 
 /*Stocks Icon*/
     .card-content-column-child .networth-table tr:nth-child(4) th span{
-        background-color: #F8BD00;
+        background-image: var(--stocks-icon);
     }
-/*Stocks Icon*/
+/*Stocks Icon*/ 
 
 /*HSA Icon*/
     .card-content-column-child .networth-table tr:nth-child(5) th span{
-        background-color: #39B6D6;
+        background-image: var(--hsa-icon);
     }
 /*HSA Icon*/
 
 /*Crypto Currency Icon*/
     .card-content-column-child .networth-table tr:nth-child(6) th span{
-        background-color: #DB505E;
+        background-image: var(--connect-accounts-icon);
     }
 /*Crypto Currency Icon*/
 
 
 /*Auto Loan Icon*/
-.card-content-column-child .cashflow-table tr:nth-child(1) th span{
-    background-color: #39B6D6;
-}
+    .card-content-column-child .cashflow-table tr:nth-child(1) th span{
+        background-image: var(--auto-loan-icon);
+    }
 /*Auto Loan Icon*/
 
 /*Student Loan Icon*/
     .card-content-column-child .cashflow-table tr:nth-child(2) th span{
-        background-color: #F8BD00;    
+        background-image: var(--student-loan-icon);
     }
 /*Student Loan Icon*/
 
@@ -461,8 +486,9 @@ tr.spaceUnder th {
 	min-height: var(--strategy-btn-height);
 	border-radius: 50%;
 	transition: 0.2s ease-in-out;
-	border: 0px;
-	background: grey;
+    border: 0px;
+    background-repeat: no-repeat;
+    box-shadow: var(--dropShadowValue);
 }
 
 .strategy-item{
@@ -473,6 +499,7 @@ tr.spaceUnder th {
     width: 70px;
     height: 70px;
     text-align: center;
+    cursor: pointer;
 }
 
 .strategy-list-con label{
@@ -486,165 +513,156 @@ tr.spaceUnder th {
 
 
 /* DEFENSIVE */
-.strategy-btn-debt-elimination-active{
-    background-image: url('./images/defensivechecklist/DebtElimination.png');
+.debt-elimination-active{
+    background-image: var(--debt-elimination);
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
-    width: var(--strategy-btn-width);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
 }
 
-.strategy-btn-personal-emergency-fund-active{
-    background-image: url('./images/defensivechecklist/PersonalEmergencyFund.png');
+.debt-elimination-disabled{
+    background-image: var(--debt-elimination-disabled);
     background-size: 100%;
     background-position: 50%;
-    width: var(--strategy-btn-width);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
+    background-repeat: no-repeat;
 }
 
-
-.strategy-btn-life-insurance-active{
-    background-image: url('./images/defensivechecklist/LifeInsurance.png');
+.personal-emergency-fund-active{
+    background-image: var(--personal-emergency-fund);
     background-size: 100%;
     background-position: 50%;
-    width: var(--strategy-btn-width);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
+    background-repeat: no-repeat;
 }
 
-.strategy-btn-disability-insurance-active{
-    background-image: url('./images/defensivechecklist/DisabilityInsurance.png');
+.personal-emergency-fund-disabled{
+    background-image: var(--personal-emergency-fund-disabled);
     background-size: 100%;
     background-position: 50%;
-    width: var(--strategy-btn-width);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
+    background-repeat: no-repeat;
 }
 
-
-.strategy-btn-health-insurance-active{
-    background-image: url('./images/defensivechecklist/HealthInsurance.png');
+.life-insurance-active{
+    background-image: var(--life-insurance);
     background-size: 100%;
     background-position: 50%;
-    width: var(--strategy-btn-width);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
+    background-repeat: no-repeat;
 }
 
-.strategy-btn-long-term-care-active{
+.life-insurance-disabled{
+    background-image: var(--life-insurance-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.disability-insurance-active{
+    background-image: var(--disability-insurance);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.disability-insurance-disabled{
+    background-image: var(--disability-insurance-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+
+.health-insurance-active{
+    background-image: var(--health-insurance);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.health-insurance-disabled{
+    background-image: var(--health-insurance-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.longterm-care-active{
     background-image: url('./images/defensivechecklist/LongtermCare.png');
     background-size: 100%;
     background-position: 50%;
-    width: var(--strategy-btn-width);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
+    background-repeat: no-repeat;
 }
 
-.strategy-btn-long-term-care-active{
-    background-image: url('./images/defensivechecklist/LongtermCare.png');
-    background-size: 100%;
-    background-position: 50%;
-    width: var(--strategy-btn-width);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
-}
 
-.strategy-btn-auto-insurance-active{
+
+.auto-insurance-active{
     background-image: url('./images/defensivechecklist/AutoInsurance.png');
     background-size: 100%;
     background-position: 50%;
-    width: var(--strategy-btn-width);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
+    background-repeat: no-repeat;
 }
 
-.strategy-btn-mortgage-insurance-active{
+.mortgage-insurance-active{
     background-image: url('./images/defensivechecklist/MortgageInsurance.png');
     background-size: 100%;
     background-position: 50%;
-    width: var(--strategy-btn-width);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
+    background-repeat: no-repeat;
 }
 
 /* OFFENSIVE */
 
-.strategy-btn-tax-planning-active{
+.tax-planning-active{
     background-image: url('./images/offensivechecklist/TaxPlanning.png');
     background-size: 100%;
     background-position: 50%;
-    width: var(--strategy-btn-width);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
+    background-repeat: no-repeat;
 }
 
-.strategy-btn-major-purchase-active{
-    background-image: url('./images/offensivechecklist/MajorPurchase.png');
+.major-purchase-active{
+    background-image: var(--major-purchase);
     background-size: 100%;
     background-position: 50%;
-    width: var(--strategy-btn-width);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
+    background-repeat: no-repeat;
 }
 
-.strategy-btn-rate-of-return-active{
+.major-purchase-disabled{
+    background-image: var(--major-purchase-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.rate-of-return-active{
     background-image: url('./images/offensivechecklist/RateofReturn.png');
     background-size: 100%;
     background-position: 50%;
-    width: var(--strategy-btn-width);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
+    background-repeat: no-repeat;
 }
 
-.strategy-btn-fees-and-commissions-active{
-    background-image: url('./images/offensivechecklist/FeesandCommissions.png');
+.fees-and-commissions-active{
+    background-image: var(--fees-and-commissions);
     background-size: 100%;
     background-position: 50%;
-    width: var(--strategy-btn-width);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
+    background-repeat: no-repeat;
 }
 
-.strategy-btn-diversification-plan-active{
-    background-image: url('./images/offensivechecklist/DiversificationPlan.png');
+.fees-and-commissions-disabled{
+    background-image: var(--fees-and-commissions-disabled);
     background-size: 100%;
     background-position: 50%;
-    width: var(--strategy-btn-width);
-    min-width: var(--strategy-btn-width);
-    min-height: var(--strategy-btn-height);
-    height: var(--strategy-btn-height);
-    border-radius: 50%;
-    transition: 0.2s ease-in-out;
-    border: 0px;
+    background-repeat: no-repeat;
+}
+
+.diversification-plan-active{
+    background-image: var(--diversification-plan);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.diversification-plan-disabled{
+    background-image: var(--diversification-plan-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
 }
 
 

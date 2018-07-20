@@ -157,7 +157,7 @@
                                     <div class="card-content-column">
                                         <div class="title-wrapper networth-header">
                                                 <label>Networth</label>
-                                                <label>-$14,514</label>
+                                                <label id="networth-label"></label>
                                         </div>
                                         <div class="title-wrapper subtitle-labels">
                                             <label>Total Assets</label>
@@ -201,7 +201,7 @@
                                     <div class="card-content-column">
                                         <div class="title-wrapper cashflow-header">
                                                 <label>Cashflow</label>
-                                                <label>$1585</label>
+                                                <label id="cashflow-label"></label>
                                         </div>
                                         <div class="title-wrapper subtitle-labels">
                                                 <label>Total Assets</label>
@@ -243,35 +243,40 @@
 
                                         <div class="strategy-list-con">
                                                 <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
                                                     <!-- <label>Emergency Fund</label> -->
+                                                    <div 
+                                                        id="personal-emergency-fund-strategy"
+                                                        onclick="toggleStrategy('personal-emergency-fund-strategy', 'strategy-circle personal-emergency-fund-active', 'strategy-circle personal-emergency-fund-disabled')"
+                                                        class="strategy-circle personal-emergency-fund-active"
+                                                    >
+                                                    </div>
                                                 </div>
                                                 <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
+                                                    <div class="strategy-circle debt-elimination-active "></div>
                                                     <!-- <label>Debt Elimination</label> -->
                                                 </div>
                                                 <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
+                                                    <div class="strategy-circle life-insurance-active"></div>
                                                     <!-- <label>Life Insurance</label> -->
                                                 </div>
                                                 <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
+                                                    <div class="strategy-circle disability-insurance-active"></div>
                                                     <!-- <label>Disability Insurance</label> -->
                                                 </div>
                                                 <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
+                                                    <div class="strategy-circle health-insurance-active"></div>
                                                     <!-- <label>Health Insurance</label> -->
                                                 </div>
                                                 <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
+                                                    <div class="strategy-circle longterm-care-active"></div>
                                                     <!-- <label>Longterm Health</label> -->
                                                 </div>
                                                 <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
+                                                    <div class="strategy-circle auto-insurance-active"></div>
                                                     <!-- <label>Auto Insurance</label> -->
                                                 </div>
                                                 <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
+                                                    <div class="strategy-circle mortgage-insurance-active"></div>
                                                     <!-- <label>Mortgage Insurance</label> -->
                                                 </div>
                                         </div>
@@ -283,28 +288,43 @@
 
                                         <div class="strategy-list-con">
                                                 <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
-                                                    <!-- <label>Emergency Fund</label> -->
+                                                    <div class="strategy-circle tax-planning-active"></div>
+                                                    <!-- <label>Tax Planning</label> -->
                                                 </div>
                                                 <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
-                                                    <!-- <label>Debt Elimination</label> -->
+                                                    <div 
+                                                        id="major-purchase-strategy"
+                                                        onclick="toggleStrategy('major-purchase-strategy', 'strategy-circle major-purchase-active', 'strategy-circle major-purchase-disabled')"
+                                                        class="strategy-circle major-purchase-active"
+                                                    >
+                                                    </div>
                                                 </div>
                                                 <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
-                                                    <!-- <label>Life Insurance</label> -->
+                                                    <div 
+                                                        id="rate-of-return-strategy"
+                                                        onclick="toggleStrategy('rate-of-return-strategy', 'strategy-circle rate-of-return-active', 'strategy-circle rate-of-return-disabled')"
+                                                        class="strategy-circle rate-of-return-active"
+                                                    >
+                                                    </div>
+                                                    <!-- <label>Rate Of Return</label> -->
                                                 </div>
                                                 <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
-                                                    <!-- <label>Disability Insurance</label> -->
+                                                    <div 
+                                                        id="diversification-plan-strategy"
+                                                        onclick="toggleStrategy('diversification-plan-strategy', 'strategy-circle diversification-plan-active', 'strategy-circle diversification-plan-disabled')"
+                                                        class="strategy-circle diversification-plan-active"
+                                                    >
+                                                    </div>
+                                                    <!-- <label> Diversification</label> -->
                                                 </div>
                                                 <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
-                                                    <!-- <label>Health Insurance</label> -->
+                                                    <!-- <label>Fees and Commissions</label> -->
+                                                    <div 
+                                                        id="fees-and-commissions-strategy"
+                                                        onclick="toggleStrategy('fees-and-commissions-strategy', 'strategy-circle fees-and-commissions-active', 'strategy-circle fees-and-commissions-disabled')"
+                                                        class="strategy-circle fees-and-commissions-active"
+                                                    >
                                                 </div>
-                                                <div class="strategy-item">
-                                                    <div class="strategy-circle"></div>
-                                                    <!-- <label>Longterm Health</label> -->
                                                 </div>
                                         </div>
                                 </div>
@@ -324,46 +344,3 @@
     
 </body>
 </html>
-
-
-<!-- <div class="child-section-wrapper">
-    <section class="sidebar-section">
-        <div class="sidebar-wrapper">
-            <ul id="mySidenav" class="sidenav">
-                    <li>Connect Accounts</li>
-                    <li>General Info</li>
-                    <li>Budget</li>
-                    <li>Assets & Liabilities</li>
-                    <li>Insurance</li>
-            </ul> 
-        </div>
-    </section>
-    <section class="content-section">
-        <div class="card">
-            <div class="title-wrapper">
-                    <h1 class="card-title">Projections</h1>
-                    <h3 class="card-subtitle">Networth Projection</h2>
-            </div>
-            <div class="card-content">
-                <div class="discover-networth-graph-con">
-
-                </div>
-            </div>
-
-        </div>  
-        <div class="card">
-            <div class="title-wrapper">
-                    <h1 class="card-title">Financial Snapshot</h1>
-            </div>
-       
-            <div class="card-content-group">
-                <div class="card-group-item">
-                    <div class="column-wrapper">
-                        <div class="networth-stat-row"><h3>Networth</h3> <h3 class="redColor">-$14,514</h3> </div>
-                        <div class="assets-stat-row"><h3>Total Assets</h3> <h3>$1000</h3></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>  
-    </section> -->
