@@ -31,12 +31,16 @@
     --disability-insurance-disabled: url('../assets/images/defensivechecklist/disability-insurance-disabled.svg');
     --debt-elimination: url('../assets/images/defensivechecklist/debt-elimination.svg');
     --debt-elimination-disabled: url('../assets/images/defensivechecklist/debt-elimination-disabled.svg');
+    --blue-text-color: #3EAEB4;
+    --credit-card-icon: url('../assets/images/discover/credit-card-icon.svg');
 
 }
 
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Poppins:400,500,600,700,900');
 
-
+.hide{
+    display:  none;
+}
 
 #sidebar ul {
     list-style: none;
@@ -134,7 +138,56 @@
     background: #F2F2F2;
     width: 100%;
     height: 200px;
+    font-family: var(--LibreFranklin);
 }
+
+/*SIDEBAR STATS STUFF*/
+  .sidebar-stats{
+     background: #F2F2F2;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+  
+  .sidebar-row {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .sidebar-row tr{
+    width: 100%;
+  }
+  
+  .sidebar-row tr th:nth-child(1){
+    text-align: left;
+  }
+  
+  .sidebar-row tr th:nth-child(2){
+    text-align: right;
+  }
+  
+  .sidebar-row tr:nth-child(1){
+    color: #3DB488; 
+  }
+  
+  .sidebar-row tr:nth-child(2){
+    color: #D65858;
+  }
+  
+  .sidebar-row tr:nth-child(3){
+    color: #707070; 
+  }
+  
+  .sidebar-row tr:nth-child(3) th{
+    border-top: 1px solid #707070;
+  }
+/*SIDEBAR STATS STUFF*/
+
+  
+
 
 .content-container{
     width: 100%;
@@ -204,6 +257,7 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+    padding-top: 10px;
     box-shadow: var(--dropShadowValue);
 }
 
@@ -231,6 +285,11 @@
     white-space: nowrap;
 }
 
+.placeholder-height{
+    height: 300px;
+    overflow: hidden;
+}
+
 .card-subtitle{
     font-family: 'Poppins', 'sans-serif';
     font-weight: bolder;
@@ -245,6 +304,18 @@
     align-items: center;
     overflow: hidden;
 }
+
+.title-wrapper-column{
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.title-wrapper-column label:nth-child(2){
+    color: var(--blue-text-color);
+}
+
 
 .checklist-title-wrapper{
     height: 50px;
@@ -449,7 +520,7 @@
 
 /*Credit Card Icon*/
     .card-content-column-child .cashflow-table tr:nth-child(3) th span{
-        background-color: #45BEA4;
+        background-image: var(--credit-card-icon);
     }
 /*Credit Card Icon*/
 

@@ -87,12 +87,39 @@
                                 <li> <span></span>Insurance</li>
                         </ul> 
                         <div class="sidebar-stats">
-                            
+                                <table class="sidebar-row">
+                                    <tr>
+                                        <th>Assets</th>
+                                        <th>$14,806</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Liabilities</th>
+                                        <th>($28,320)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Net Worth</th>
+                                        <th>(-14,514)</th>
+                                    </tr>
+                                </table>
+                                <table class="sidebar-row">
+                                    <tr>
+                                        <th>Income</th>
+                                        <th>$14,806</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Expenses</th>
+                                        <th>($2,515)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Cashflow</th>
+                                        <th>$1,585</th>
+                                    </tr>
+                                </table>
                         </div>
                 </section>
                 <section class="content-container landons-border2">
                     <div class="content-wrapper">
-                            <div class="card">
+                            <div id="become-foursteps-member" class="card">
                                 <div class="title-wrapper">
                                     <label class="card-title">Become a FourSteps Member</label>
                                 </div>
@@ -130,7 +157,7 @@
                             </div>
                             <div class="card">
                                 <div id="graph-projections-parent" class="card-content-group">
-                                    <div class="card-content-column">
+                                    <!-- <div class="card-content-column">
                                         <div class="title-wrapper">
                                                 <label class="card-title">Your Current Projection</label>
                                         </div>
@@ -148,14 +175,18 @@
 
                                         </div>
                                     </div>
-          
+                                </div> -->
                                 </div>
                             </div>
 
-                            <div class="card">
+                            <div id="financial-snapshot" class="card">
+                                    <div id="financial-snapshot-text" class="title-wrapper">
+                                            <label class="card-title">Financial Snapshot</label>
+                                    </div>
                                 <div id="graph-projections-parent" class="card-content-group">
+                                    
                                     <div class="card-content-column">
-                                        <div class="title-wrapper networth-header">
+                                        <div id="networth-header" class="title-wrapper networth-header">
                                                 <label>Networth</label>
                                                 <label id="networth-label"></label>
                                         </div>
@@ -199,7 +230,7 @@
                                         </div>
                                     </div>
                                     <div class="card-content-column">
-                                        <div class="title-wrapper cashflow-header">
+                                        <div id="cashflow-header" class="title-wrapper cashflow-header">
                                                 <label>Cashflow</label>
                                                 <label id="cashflow-label"></label>
                                         </div>
@@ -233,7 +264,7 @@
 
                             <div class="card">
                                     <div class="title-wrapper">
-                                            <label class="card-title-checklist">Checklists</label>
+                                            <label class="card-title">Checklists</label>
                                     </div>
                                 <div class="card-content-group">
                                     <div class="card-content-column">
@@ -246,7 +277,6 @@
                                                     <!-- <label>Emergency Fund</label> -->
                                                     <div 
                                                         id="personal-emergency-fund-strategy"
-                                                        onclick="toggleStrategy('personal-emergency-fund-strategy', 'strategy-circle personal-emergency-fund-active', 'strategy-circle personal-emergency-fund-disabled')"
                                                         class="strategy-circle personal-emergency-fund-active"
                                                     >
                                                     </div>
@@ -294,7 +324,6 @@
                                                 <div class="strategy-item">
                                                     <div 
                                                         id="major-purchase-strategy"
-                                                        onclick="toggleStrategy('major-purchase-strategy', 'strategy-circle major-purchase-active', 'strategy-circle major-purchase-disabled')"
                                                         class="strategy-circle major-purchase-active"
                                                     >
                                                     </div>
@@ -302,7 +331,6 @@
                                                 <div class="strategy-item">
                                                     <div 
                                                         id="rate-of-return-strategy"
-                                                        onclick="toggleStrategy('rate-of-return-strategy', 'strategy-circle rate-of-return-active', 'strategy-circle rate-of-return-disabled')"
                                                         class="strategy-circle rate-of-return-active"
                                                     >
                                                     </div>
@@ -311,7 +339,6 @@
                                                 <div class="strategy-item">
                                                     <div 
                                                         id="diversification-plan-strategy"
-                                                        onclick="toggleStrategy('diversification-plan-strategy', 'strategy-circle diversification-plan-active', 'strategy-circle diversification-plan-disabled')"
                                                         class="strategy-circle diversification-plan-active"
                                                     >
                                                     </div>
@@ -321,7 +348,6 @@
                                                     <!-- <label>Fees and Commissions</label> -->
                                                     <div 
                                                         id="fees-and-commissions-strategy"
-                                                        onclick="toggleStrategy('fees-and-commissions-strategy', 'strategy-circle fees-and-commissions-active', 'strategy-circle fees-and-commissions-disabled')"
                                                         class="strategy-circle fees-and-commissions-active"
                                                     >
                                                 </div>
