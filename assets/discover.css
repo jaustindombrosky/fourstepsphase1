@@ -42,6 +42,10 @@
     display:  none;
 }
 
+.navbar{
+    border-radius: 0px;
+}
+
 #sidebar ul {
     list-style: none;
     padding-left: 0px;

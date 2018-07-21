@@ -23,13 +23,15 @@ let user = {
 
 let networthValue = {
     value: user.networth,
-    id: 'networth-label'
+    id: 'networth-label',
+    sidebarid: 'networth-sb'
 } 
 
 
 let cashflowValue = {
     value: user.cashflow,
-    id: 'cashflow-label'
+    id: 'cashflow-label',
+    sidebarid: 'cashflow-sb'
 }
 
 let healthinsuranceObject = {
@@ -114,15 +116,19 @@ function handleCurrency(incomingCurrency){
 function handleValues(){
     valuesArray.forEach(item => {
         let idLabel = document.getElementById(item.id);
+        let sidebarID = document.getElementById(item.sidebarid);
+        let currency = handleCurrency(item.value);
         if(item.value > 0){
-
             idLabel.style.color = "#B4E1CE"
-            idLabel.innerHTML = handleCurrency(item.value);
+            idLabel.innerHTML = currency;
+            sidebarID.innerHTML = currency;
 
         } else if(item.value < 0){
 
             idLabel.style.color = "#D25956"
-            idLabel.innerHTML = handleCurrency(item.value);
+            idLabel.innerHTML = currency;
+            sidebarID.innerHTML = currency;
+
         }
     })
 }
