@@ -26,6 +26,7 @@
     --life-insurance-disabled: url('../assets/images/defensivechecklist/life-insurance-disabled.svg');
     --hsa-icon: url('../assets/images/discover/hsa-icon.svg');
     --auto-loan-icon: url('../assets/images/discover/auto-loan-icon.svg');
+    --auto-insurance-disabled: url('../assets/images/defensivechecklist/auto-insurance-disabled.svg');
     --student-loan-icon: url('../assets/images/discover/student-loan-icon.svg');
     --disability-insurance: url('../assets/images/defensivechecklist/disability-insurance.svg');
     --disability-insurance-disabled: url('../assets/images/defensivechecklist/disability-insurance-disabled.svg');
@@ -667,12 +668,30 @@ tr.spaceUnder th {
 }
 
 
-
-.auto-insurance-active{
-    background-image: url('./images/defensivechecklist/AutoInsurance.png');
+.longterm-care-disabled{
+    background-image: url('./images/defensivechecklist/LongtermCare.png');
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
+    opacity: 0.2;
+}
+
+
+
+.auto-insurance-active{
+    background-image: var(--auto-loan-icon);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+
+.auto-insurance-disabled{
+    background-image: var(--auto-insurance-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    opacity: 0.2;
 }
 
 .mortgage-insurance-active{
@@ -682,6 +701,14 @@ tr.spaceUnder th {
     background-repeat: no-repeat;
 }
 
+.mortgage-insurance-disabled{
+    background-image: url('./images/defensivechecklist/MortgageInsurance.png');
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+}
+
 /* OFFENSIVE */
 
 .tax-planning-active{
@@ -689,6 +716,16 @@ tr.spaceUnder th {
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
+}
+
+
+.tax-planning-disabled{
+    background-image: url('./images/offensivechecklist/TaxPlanning.png');
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+
 }
 
 .major-purchase-active{
@@ -712,6 +749,15 @@ tr.spaceUnder th {
     background-repeat: no-repeat;
 }
 
+.rate-of-return-disabled{
+    background-image: url('./images/offensivechecklist/RateofReturn.png');
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+
+}
+
 .fees-and-commissions-active{
     background-image: var(--fees-and-commissions);
     background-size: 100%;
@@ -724,6 +770,7 @@ tr.spaceUnder th {
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
+    
 }
 
 .diversification-plan-active{
@@ -741,13 +788,6 @@ tr.spaceUnder th {
 }
 
 
-
-
-
-
-
-
-
 @media only screen and (max-width: 1031px){
     #graph-projections-parent{
         grid-template-columns: 1fr;
@@ -759,6 +799,11 @@ tr.spaceUnder th {
         flex-direction: column;
         width: 100%;
     }
+
+    #sidebar{
+        overflow: hidden;
+    }
+
     .navtabs-sub-con{
         display: flex;
         width: 100%;
@@ -768,13 +813,14 @@ tr.spaceUnder th {
         align-items: center;
         border-top: #e7e7e7 1px solid;
     }
-
+    
     .discover-sidebar{
         display: none;
         position: relative;
         height: 40px;
         background-color: #D5D5D5;
         width: 100%;
+        max-width: inherit;
     }
 
     .content-container{
@@ -787,6 +833,17 @@ tr.spaceUnder th {
         grid-template-columns: 1fr;
         grid-gap: 40px;
         width: 100%;
+    }
+
+    .discover-sidebar{
+        display: flex;
+        flex-direction: column;
+        height: 0px;
+        background-color: #D5D5D5;
+        width: 100%;
+        position: absolute;
+        transition: 0.2s ease-in-out;
+        opacity: 0;
     }
 }
   
