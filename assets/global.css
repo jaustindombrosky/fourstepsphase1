@@ -109,3 +109,16 @@ a { color: inherit; }
     text-decoration: none;
 }
 
+.navtabs-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4AAEB5;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    /* border: 1px solid #929292; */
+    background: #F2F2F2;
+    
+}
+
