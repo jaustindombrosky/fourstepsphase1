@@ -87,15 +87,39 @@
                                 <li> <span></span>Insurance</li>
                         </ul> 
                         <div class="sidebar-stats">
-                            
+                                <table class="sidebar-row">
+                                    <tr>
+                                        <th>Assets</th>
+                                        <th>$14,806</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Liabilities</th>
+                                        <th>($28,320)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Net Worth</th>
+                                        <th>( <span id="networth-sb"></span>)</th>
+                                    </tr>
+                                </table>
+                                <table class="sidebar-row">
+                                    <tr>
+                                        <th>Income</th>
+                                        <th>$14,806</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Expenses</th>
+                                        <th>($2,515)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Cashflow</th>
+                                        <th id="cashflow-sb"> </th>
+                                    </tr>
+                                </table>
                         </div>
                 </section>
                 <section class="content-container landons-border2">
                     <div class="content-wrapper">
-
-
-
-                            <div class="card">
+                            <div id="become-foursteps-member" class="card">
                                 <div class="title-wrapper">
                                     <label class="card-title">Become a FourSteps Member</label>
                                 </div>
@@ -114,9 +138,6 @@
                                                 <li>Real-time tracking of progress towards finanicial goals</li>
                                                 <li>Access to FourSteps Financial Literacy Library</li>
                                             </p>
-                                           
-
-
                                         </div>
                                         <div class="card-content-child get-plan-div">
                                             <label class="get-plan-title">Get a plan, automate your cash flow, and live knowing your goals will be achieved.</label>
@@ -136,12 +157,12 @@
                             </div>
                             <div class="card">
                                 <div id="graph-projections-parent" class="card-content-group">
-                                    <div class="card-content-column">
+                                    <!-- <div class="card-content-column">
                                         <div class="title-wrapper">
                                                 <label class="card-title">Your Current Projection</label>
                                         </div>
                                         <div class="card-content-column-child">
-                                            
+                                            <img src='./assets/images/placeholders/discovergraph1.svg' />
                                         </div>
                                     </div>
                                     <div class="card-content-column">
@@ -149,17 +170,193 @@
                                                 <label class="card-title">Your Projection with FourSteps</label>
                                         </div>
                                         <div class="card-content-column-child">
+                                                <img src='./assets/images/placeholders/discovergraph2.svg' />
+
 
                                         </div>
                                     </div>
-    
-          
+                                </div> -->
                                 </div>
-
-
                             </div>
-                    </div>
-                                          
+
+                            <div id="financial-snapshot" class="card">
+                                    <div id="financial-snapshot-text" class="title-wrapper">
+                                            <label class="card-title">Financial Snapshot</label>
+                                    </div>
+                                <div id="graph-projections-parent" class="card-content-group">
+                                    
+                                    <div class="card-content-column">
+                                        <div id="networth-header" class="title-wrapper networth-header">
+                                                <label>Networth</label>
+                                                <label id="networth-label"></label>
+                                        </div>
+                                        <div class="title-wrapper subtitle-labels">
+                                            <label>Total Assets</label>
+                                            <label>$28,320</label>
+                                        </div>
+                                        <div class="card-content-column-child">
+                                                <table class="networth-table" style="width:100%">
+                                                        <tr class="spaceUnder">
+                                                          <th class="th-icon-con"><span></span></th>
+                                                          <th>Personal Checking</th> 
+                                                          <th class="th-currency-con">$1,500</th>
+                                                        </tr>
+                                                        <tr class="spaceUnder">
+                                                          <th class="th-icon-con"><span></span></th>
+                                                          <th>Personal Savings</th> 
+                                                          <th class="th-currency-con">$1,500</th>
+                                                        </tr>
+                                                        <tr class="spaceUnder">
+                                                          <th class="th-icon-con"><span></span></th>
+                                                          <th>IRA</th> 
+                                                          <th class="th-currency-con">$1,500</th>
+                                                        </tr>
+                                                        <tr class="spaceUnder">
+                                                          <th class="th-icon-con"><span></span></th>
+                                                          <th>Stocks</th> 
+                                                          <th class="th-currency-con">$1,500</th>
+                                                        </tr>
+                                                        <tr class="spaceUnder">
+                                                          <th class="th-icon-con"><span></span></th>
+                                                          <th>HSA</th> 
+                                                          <th class="th-currency-con">$1,500</th>
+                                                        </tr>
+                                                        <tr>
+                                                          <th class="th-icon-con"><span></span></th>
+                                                          <th>Crypto Currency</th> 
+                                                          <th class="th-currency-con">$1,500</th>
+                                                        </tr>
+                                                </table>
+                                        </div>
+                                    </div>
+                                    <div class="card-content-column">
+                                        <div id="cashflow-header" class="title-wrapper cashflow-header">
+                                                <label>Cashflow</label>
+                                                <label id="cashflow-label"></label>
+                                        </div>
+                                        <div class="title-wrapper subtitle-labels">
+                                                <label>Total Assets</label>
+                                                <label>$14,806</label>
+                                        </div>
+
+                                        <div class="card-content-column-child">
+                                                <table class="cashflow-table" style="width:100%">
+                                                        <tr class="spaceUnder">
+                                                          <th class="th-icon-con"><span></span></th>
+                                                          <th>Auto Loan</th> 
+                                                          <th class="th-currency-con">$1,500</th>
+                                                        </tr>
+                                                        <tr class="spaceUnder">
+                                                          <th class="th-icon-con"><span></span></th>
+                                                          <th>Student Loan</th> 
+                                                          <th class="th-currency-con">$1,500</th>
+                                                        </tr>
+                                                        <tr class="spaceUnder">
+                                                          <th class="th-icon-con"><span></span></th>
+                                                          <th>Credit Card</th> 
+                                                          <th class="th-currency-con">$1,500</th>
+                                                        </tr>
+                                                </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                    <div class="title-wrapper">
+                                            <label class="card-title">Checklists</label>
+                                    </div>
+                                <div class="card-content-group">
+                                    <div class="card-content-column">
+                                        <div class="checklist-title-wrapper">
+                                            <label>Defense</label>
+                                        </div>
+
+                                        <div class="strategy-list-con">
+                                                <div class="strategy-item">
+                                                    <!-- <label>Emergency Fund</label> -->
+                                                    <div 
+                                                        id="personal-emergency-fund-strategy"
+                                                        class="strategy-circle personal-emergency-fund-active"
+                                                    >
+                                                    </div>
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <div class="strategy-circle debt-elimination-active "></div>
+                                                    <!-- <label>Debt Elimination</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <div class="strategy-circle life-insurance-active"></div>
+                                                    <!-- <label>Life Insurance</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <div class="strategy-circle disability-insurance-active"></div>
+                                                    <!-- <label>Disability Insurance</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <div class="strategy-circle health-insurance-active"></div>
+                                                    <!-- <label>Health Insurance</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <div class="strategy-circle longterm-care-active"></div>
+                                                    <!-- <label>Longterm Health</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <div class="strategy-circle auto-insurance-active"></div>
+                                                    <!-- <label>Auto Insurance</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <div class="strategy-circle mortgage-insurance-active"></div>
+                                                    <!-- <label>Mortgage Insurance</label> -->
+                                                </div>
+                                        </div>
+                                </div>
+                                    <div class="card-content-column">
+                                        <div class="checklist-title-wrapper">
+                                            <label>Offense</label>
+                                        </div>
+
+                                        <div class="strategy-list-con">
+                                                <div class="strategy-item">
+                                                    <div class="strategy-circle tax-planning-active"></div>
+                                                    <!-- <label>Tax Planning</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <div 
+                                                        id="major-purchase-strategy"
+                                                        class="strategy-circle major-purchase-active"
+                                                    >
+                                                    </div>
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <div 
+                                                        id="rate-of-return-strategy"
+                                                        class="strategy-circle rate-of-return-active"
+                                                    >
+                                                    </div>
+                                                    <!-- <label>Rate Of Return</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <div 
+                                                        id="diversification-plan-strategy"
+                                                        class="strategy-circle diversification-plan-active"
+                                                    >
+                                                    </div>
+                                                    <!-- <label> Diversification</label> -->
+                                                </div>
+                                                <div class="strategy-item">
+                                                    <!-- <label>Fees and Commissions</label> -->
+                                                    <div 
+                                                        id="fees-and-commissions-strategy"
+                                                        class="strategy-circle fees-and-commissions-active"
+                                                    >
+                                                </div>
+                                                </div>
+                                        </div>
+                                </div>
+                            </div>
+                            
+                    </div>                   
                 </div>
 
                 </section>
@@ -173,46 +370,3 @@
     
 </body>
 </html>
-
-
-<!-- <div class="child-section-wrapper">
-    <section class="sidebar-section">
-        <div class="sidebar-wrapper">
-            <ul id="mySidenav" class="sidenav">
-                    <li>Connect Accounts</li>
-                    <li>General Info</li>
-                    <li>Budget</li>
-                    <li>Assets & Liabilities</li>
-                    <li>Insurance</li>
-            </ul> 
-        </div>
-    </section>
-    <section class="content-section">
-        <div class="card">
-            <div class="title-wrapper">
-                    <h1 class="card-title">Projections</h1>
-                    <h3 class="card-subtitle">Networth Projection</h2>
-            </div>
-            <div class="card-content">
-                <div class="discover-networth-graph-con">
-
-                </div>
-            </div>
-
-        </div>  
-        <div class="card">
-            <div class="title-wrapper">
-                    <h1 class="card-title">Financial Snapshot</h1>
-            </div>
-       
-            <div class="card-content-group">
-                <div class="card-group-item">
-                    <div class="column-wrapper">
-                        <div class="networth-stat-row"><h3>Networth</h3> <h3 class="redColor">-$14,514</h3> </div>
-                        <div class="assets-stat-row"><h3>Total Assets</h3> <h3>$1000</h3></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>  
-    </section> -->
