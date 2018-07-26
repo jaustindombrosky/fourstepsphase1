@@ -11,9 +11,43 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/discover.css">
     <link rel="stylesheet" type="text/css" href="assets/global.css">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<style>
+	
+	label{
+	color:#3db488;
+	font-weight:bold;
+	font-size: 18px;
+	
+	}	
+	h2 {
+	color: #3db488;
+	font-weight:bold;
+	text-align:center;
+	} 
+	h4 {
+	color: #3db488;
+	font-weight:bold;
+	text-align:center;
+	}  
+	h6{
+	font-size:16px;
+	color:gray;
+	font-weight:bold;
+	}
+	p{
+	line-height: 50%;
+	color: gray;
+	font-size:12px;
+	}
+	.section {
+	background-color:#e4e4e4;
+	border: 10px solid white;
+	}
+	
+	</style>
 </head>
 <body>
     <div class="container-fluid no-padding-left-right foursteps-header">
@@ -45,7 +79,7 @@
 
         <div class="section-child">
 
-            <nav class="navtabs-container">
+            <nav class="nav navtabs-container">
                 
                 <a class="navtabs-child" href="./discover1.html">
                     <label>Discover</label>
@@ -53,92 +87,412 @@
                 <a class="navtabs-child" href="./plan2.html">
                     <label>Plan</label>
                 </a>
-                <div class="navtabs-child-selected">
+                <a class="navtabs-child-selected" href="./automate4.html">
                     <label>Automate</label>
-                </div>
+                </a>
                 <a class="navtabs-child" href="./live3.html">
                     <label>Live</label>
                 </a>
             </nav>
+			
+			<h2> Total Monthly Automated Amount: </h2>
+			<h4 style="color:gray;"> $$$ </h4>
+			
+			
+<!--			<nav class="nav navtabs-container">
+                <ul class="nav nav-tabs">
+			<li class="active">
+			<a  href="#offensive" data-toggle="tab">Offensive</a>
+			</li>
+			<li><a href="#defensive" data-toggle="tab">Defensive</a>
+			</li>
+			</ul> -->
+			<nav class="nav navtabs-container">
+                
+            <a class="navtabs-child active" data-toggle="tab" href="#offensive">
+                 <label>Offensive</label>
+            </a>
+			<a class="navtabs-child" data-toggle="tab" href="#defensive">
+				<label>Defensive</label>
+			</a>
+                </a>
+            </nav>
 
-            <div class="child-section-wrapper">
-                    <div class="financial-shot-con">
-                        <h4 class="discover-main-title">Debt Elimination Plan (Defense)</h4>
-                        <hr>
-                        <div class="snapshot-progress-container">
+			
+			
+			
+            <div class="child-section-wrapper tab-content" style="text-align:center;">
 
-                    <div class="checklist-con">
-                        <!-- <h4 class="checklist-title">Checklist</h4> -->
-                            <div class="strategy-container">
-                                <div>
-                                    <hr>
-                                    <!-- <div class="row"> -->
-                                        <div class="strategy-list-con">
-                                                <div class="strategy-item">
-                                                    <button class="strategy-btn-personal-emergency-fund-active"></button>
-                                                    <!-- <label>Emergency Fund</label> -->
-                                                </div>
-                                                <div class="strategy-item">
-                                                    <button class="strategy-btn-debt-elimination-active"></button>
-                                                    <!-- <label>Debt Elimination</label> -->
-                                                </div>
-                                                <div class="strategy-item">
-                                                    <button class="strategy-btn-life-insurance-active"></button>
-                                                    <!-- <label>Life Insurance</label> -->
-                                                </div>
-                                                <div class="strategy-item">
-                                                    <button class="strategy-btn-disability-insurance-active"></button>
-                                                    <!-- <label>Disability Insurance</label> -->
-                                                </div>
-                                                <div class="strategy-item">
-                                                    <button class="strategy-btn-health-insurance-active"></button>
-                                                    <!-- <label>Health Insurance</label> -->
-                                                </div>
-                                                <div class="strategy-item">
-                                                    <button class="strategy-btn-long-term-care-active"></button>
-                                                    <!-- <label>Longterm Health</label> -->
-                                                </div>
-                                                <div class="strategy-item">
-                                                    <button class="strategy-btn-auto-insurance-active"></button>
-                                                    <!-- <label>Auto Insurance</label> -->
-                                                </div>
-                                                <div class="strategy-item">
-                                                    <button class="strategy-btn-mortgage-insurance-active"></button>
-                                                    <!-- <label>Mortgage Insurance</label> -->
-                                                </div>
-                                        </div>
-                                    <!-- </div> -->
-                                </div>
-                                <div>
-                                    <h4 class="center-text">Diversification Plan "Offense"</h4>
-                                    <hr>
-                                    <!-- <div class="row"> -->
-                                            <div class="strategy-list-con">
-                                                    <div class="strategy-item">
-                                                        <button class="strategy-btn-diversification-plan-active"></button>
-                                                        <!-- <label>Diversification</label> -->
-                                                    </div>
-                                                    <div class="strategy-item">
-                                                        <button class="strategy-btn-major-purchase-active"></button>
-                                                        <!-- <label>Major Purchase Plan</label> -->
-                                                    </div>
-                                                    <div class="strategy-item">
-                                                        <button class="strategy-btn-tax-planning-active"></button>
-                                                        <!-- <label>Tax Planning</label> -->
-                                                    </div>
-                                                    <div class="strategy-item">
-                                                        <button class="strategy-btn-rate-of-return-active"></button>
-                                                        <!-- <label>Rate Of Return</label> -->
-                                                    </div>
-                                                    <div class="strategy-item">
-                                                        <button class="strategy-btn-fees-and-commissions-active"></button>
-                                                        <!-- <label>Fees & Commission</label> -->
-                                                    </div>
-                                            </div>
-                                        <!-- </div> -->
-                                </div>
-                            </div>
-                    </div>
+			
+                    <div id="offensive" class="container tab-pane active" >
+                           <div class="col-md-4 section">
+							<h4 style="display: inline-block;">Major Purchases:</h4>
+							<h4 style="display: inline-block;color:gray;">$$$</h4>
+							
+							
+							<div class="line">
+							<svg height="25" width="200">
+							<polyline points="20,15 20,0 170,0 170,15" style="fill:none;stroke:black;stroke-width:1;" />
+							</svg>
+							</div>
+							   <div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+
+								</div>
+
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+								
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+								</div>
+							
+						   <div class="col-md-4 section">
+						   
+							<h4 style="display: inline-block;">Retirement:</h4>
+							<h4 style="display: inline-block;color:gray;">$$$</h4>
+															
+							
+							<div class="line">
+							<svg height="25" width="200">
+							<polyline points="20,15 20,0 170,0 170,15" style="fill:none;stroke:black;stroke-width:1;" />
+							</svg>
+							</div>
+							   <div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+
+								</div>
+
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+								
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+								</div>
+						   <div class="col-md-4 section">
+						  
+							<h4 style="display: inline-block;">Wealth Accumulation:</h4>
+							<h4 style="display: inline-block;color:gray;">$$$</h4>
+															
+							
+							<div class="line">
+							<svg height="25" width="200">
+							<polyline points="20,15 20,0 170,0 170,15" style="fill:none;stroke:black;stroke-width:1;" />
+							</svg>
+							</div>
+							   <div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+
+								</div>
+
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+								
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+								</div>
+						  </div>
+						  
+						   
+					   
+
+						<div id="defensive" class="container tab-pane" >
+                           <div class="col-md-4 section">
+							<h4 style="display: inline-block;">Emergency Fund:</h4>
+							<h4 style="display: inline-block;color:gray;">$$$</h4>
+							
+							
+							<div class="line">
+							<svg height="25" width="200">
+							<polyline points="20,15 20,0 170,0 170,15" style="fill:none;stroke:black;stroke-width:1;" />
+							</svg>
+							</div>
+							   <div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+
+								</div>
+
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+								
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+								</div>
+							
+						   <div class="col-md-4 section">
+						   
+							<h4 style="display: inline-block;">Debt Elimination:</h4>
+							<h4 style="display: inline-block;color:gray;">$$$</h4>
+															
+							
+							<div class="line">
+							<svg height="25" width="200">
+							<polyline points="20,15 20,0 170,0 170,15" style="fill:none;stroke:black;stroke-width:1;" />
+							</svg>
+							</div>
+							   <div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+
+								</div>
+
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+								
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+								</div>
+						   <div class="col-md-4 section">
+						  
+							<h4 style="display: inline-block;">Risk Management:</h4>
+							<h4 style="display: inline-block;color:gray;">$$$</h4>
+															
+							
+							<div class="line">
+							<svg height="25" width="200">
+							<polyline points="20,15 20,0 170,0 170,15" style="fill:none;stroke:black;stroke-width:1;" />
+							</svg>
+							</div>
+							   <div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+
+								</div>
+
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+								
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+
+								<div class="col-sm-6">
+								<img src="./assets/images/automate-page/icon.png"><span class="glyphicon glyphicon-ok"></span>
+								<h6>Roth IRA</h6>
+								<p style="font-weight: bold;">$100</p>
+								<p style="font-weight: bold;">Goal:</p>
+								<p style="font-weight: normal;">Home</p>
+								<p style="font-weight: bold;">Target Balance: </p>
+								<p style="font-weight: normal;">$$$</p>
+								<p style="font-weight: bold;">Next Payment Date:</p>
+								<p style="font-weight: normal;">x/x/x</p>
+								</div>
+								</div>
+						  </div>
+						  
             </div>
     </div>
     </div>
