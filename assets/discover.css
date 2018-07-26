@@ -38,6 +38,10 @@
     --longterm-care-disabled: url('../assets/images/defensivechecklist/longterm-care-disabled.svg');
     --tax-planning: url('../assets/images/offensivechecklist/tax-planning.svg');
     --tax-planning-disabled: url('../assets/images/offensivechecklist/tax-planning-disabled.svg');
+    --mortgage-insurance: url('../assets/images/defensivechecklist/mortgage-insurance.svg');
+    --mortgage-insurance-disabled: url('../assets/images/defensivechecklist/mortgage-insurance-disabled.svg');
+    --rate-of-return: url('../assets/images/offensivechecklist/rate-of-return.svg');
+    --rate-of-return-disabled: url('../assets/images/offensivechecklist/rate-of-return-disabled.svg')
 
 }
 
@@ -697,18 +701,17 @@ tr.spaceUnder th {
 }
 
 .mortgage-insurance-active{
-    background-image: url('./images/defensivechecklist/MortgageInsurance.png');
+    background-image: var(--mortgage-insurance);
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
 }
 
 .mortgage-insurance-disabled{
-    background-image: url('./images/defensivechecklist/MortgageInsurance.png');
+    background-image: var(--mortgage-insurance-disabled);
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
-    opacity: 0.2;
 }
 
 /* OFFENSIVE */
@@ -744,18 +747,17 @@ tr.spaceUnder th {
 }
 
 .rate-of-return-active{
-    background-image: url('./images/offensivechecklist/RateofReturn.png');
+    background-image: var(--rate-of-return);
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
 }
 
 .rate-of-return-disabled{
-    background-image: url('./images/offensivechecklist/RateofReturn.png');
+    background-image: var(--rate-of-return-disabled);
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
-    opacity: 0.5;
 
 }
 

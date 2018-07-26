@@ -2,10 +2,11 @@
   "name": "fourstepsphase1",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon server.js"
+    "server": "nodemon app",
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,15 @@
   },
   "homepage": "https://github.com/jaustindombrosky/fourstepsphase1#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "debug": "^3.1.0",
     "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "graph": "^0.2.0",
+    "hjs": "0.0.6",
+    "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.2.5",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0"

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FourSteps | Register</title>
+    <!-- <link rel="stylesheet" type="css/text" href="../assets/css/global.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../../node_modules/materialize-css/dist/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+</head>
+<body>
+
+
+
+    
+    <div class="row">
+        <div class="input-field">
+            <input id="firstname_inline" name="firstname" type="text" class="validate">
+            <label for="firstname_inline">First Name</label>
+            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field">
+                <input id="lastname_inline" name="lastname" type="text" class="validate">
+                <label for="lastname_inline">Last Name</label>
+                <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field">
+                <input id="emailaddress_inline" name="email" type="email" class="validate">
+                <label for="emailaddress_inline">Email Address</label>
+                <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field">
+                <input id="phonenumber_inline" name="phone" type="text" class="validate">
+                <label for="phonenumber_inline">Phone Number</label>
+                <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="input-field">
+                <input name="password" id="password_inline" type="password" class="validate">
+                <label for="password_inline">Password</label>
+                <!-- <span class="helper-text" data-error="wrong" data-success="right">Helper text</span> -->
+                <span id="password-helper-text">
+
+                </span>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="input-field">
+                    <input name="password2" id="confirmpassword_inline" type="password" class="validate">
+                    <label for="confirmpassword_inline">Confirm Password</label>
+                    <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+        </div>
+    </div>
+
+    <a class="waves-effect waves-light btn">Register</a>
+    <a class="waves-effect waves-light btn">Log In</a>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+    <script>
+
+
+
+        let newUser = {
+            firstname: '',
+            lastname: '',
+            email: '',
+            password: '',
+            password2: ''
+        }
+    
+    document.getElementById("firstname_inline").onkeyup = function() {onChange("firstname_inline")};
+    document.getElementById("lastname_inline").onkeyup = function() {onChange("lastname_inline")};
+    document.getElementById("emailaddress_inline").onkeyup = function() {onChange("emailaddress_inline")};
+    document.getElementById("phonenumber_inline").onkeyup = function() {onChange("phonenumber_inline")};
+    document.getElementById("password_inline").onkeyup = function() {onChange("password_inline")};
+    document.getElementById("confirmpassword_inline").onkeyup = function() {onChange("confirmpassword_inline")};
+
+
+
+    function onChange(id) {
+        let e = document.getElementById(id);
+        let name = e.name;
+        let value = e.value;
+        newUser[name] = value
+        console.log(newUser)
+
+    }
+
+
+        
+    </script>
+</body>
+</html>

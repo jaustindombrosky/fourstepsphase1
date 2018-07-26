@@ -90,7 +90,7 @@ router.post('/login', (req, res) => {
                         // User Matched
                         const payload = { // Create JWT Payload
                             id: user.id,
-                            name: user.name,
+                            firstname: user.firstname,
                         }
 
                         // Sign Token
@@ -122,8 +122,10 @@ router.get('/current', passport.authenticate('jwt', {session: false}),
     (req, res) => {
         res.json({
             id: req.user.id,
-            name: req.user.name,
-            email: req.user.email
+            firstname: req.user.firstname,
+            lastname: req.user.lastname,
+            email: req.user.email,
+            phone: req.user.phone,
         })
 })
 
