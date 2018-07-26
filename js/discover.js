@@ -252,7 +252,7 @@ function handleToggle(){
     if(discoverSideBar.className === "discover-sidebar"){
         console.log('on')
         discoverSideBar.className = "discover-sidebar--after";
-    } else if(sidebar.className === 'discover-sidebar--after') {
+    } else if(discoverSideBar.className === 'discover-sidebar--after') {
         discoverSideBar.className = 'discover-sidebar';
     }
 }
