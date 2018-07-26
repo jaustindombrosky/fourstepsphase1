@@ -36,6 +36,8 @@
     --credit-card-icon: url('../assets/images/discover/credit-card-icon.svg');
     --longterm-care: url('../assets/images/defensivechecklist/longterm-care.svg');
     --longterm-care-disabled: url('../assets/images/defensivechecklist/longterm-care-disabled.svg');
+    --tax-planning: url('../assets/images/offensivechecklist/tax-planning.svg');
+    --tax-planning-disabled: url('../assets/images/offensivechecklist/tax-planning-disabled.svg');
 
 }
 
@@ -712,7 +714,7 @@ tr.spaceUnder th {
 /* OFFENSIVE */
 
 .tax-planning-active{
-    background-image: url('./images/offensivechecklist/TaxPlanning.png');
+    background-image: var(--tax-planning);
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -720,11 +722,10 @@ tr.spaceUnder th {
 
 
 .tax-planning-disabled{
-    background-image: url('./images/offensivechecklist/TaxPlanning.png');
+    background-image: var(--tax-planning-disabled);
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
-    opacity: 0.2;
 
 }
 
@@ -850,13 +851,14 @@ tr.spaceUnder th {
 
 @media only screen and (max-width: 629px){
 
-
+    .sidebar-stats{
+        font-size: 17px;
+    }
 
     .discover-sidebar li {
         padding: 10px; 
         opacity: 0;
         transition: 0.2s ease-in-out;
-
     }
     .discover-sidebar--after li {
         padding: 10px; 
@@ -920,4 +922,29 @@ tr.spaceUnder th {
     .card-title{
         font-size: 17px;
     }
+
+     .networth-header label{
+        font-size: 20px;
+    }
+
+    .cashflow-header label{
+        font-size: 20px;
+    }
+
 }
+
+
+@media only screen and (max-width: 400px){
+    .card-title{
+        font-size: 17px;
+    }
+
+     .networth-header label{
+        font-size: 20px;
+    }
+
+    .cashflow-header label{
+        font-size: 20px;
+    }
+}
+

@@ -124,3 +124,15 @@ a { color: inherit; }
     text-decoration: none;
 }
 
+
+
+@media only screen and (max-width: 400px){
+    .navtabs-child label{
+        font-size: 14px;
+    }
+    .navtabs-child-selected label{
+        font-size: 14px;
+
+    }
+    
+}
