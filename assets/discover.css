@@ -34,6 +34,8 @@
     --debt-elimination-disabled: url('../assets/images/defensivechecklist/debt-elimination-disabled.svg');
     --blue-text-color: #3EAEB4;
     --credit-card-icon: url('../assets/images/discover/credit-card-icon.svg');
+    --longterm-care: url('../assets/images/defensivechecklist/longterm-care.svg');
+    --longterm-care-disabled: url('../assets/images/defensivechecklist/longterm-care-disabled.svg');
 
 }
 
@@ -53,7 +55,7 @@
     width: 100%;
 }
 
-#mySidenav li {
+.sidenav li {
     width: 100%;
     min-height: 40px;
     display: flex;
@@ -64,7 +66,7 @@
 }
 
 
-#mySidenav li:hover {
+.sidenav li:hover {
     background: #C9C9C9;
     cursor: pointer;
 }
@@ -91,7 +93,7 @@
 
 
 
-#mySidenav li{
+.sidenav li{
     display: flex;
     padding: 10px;
 }
@@ -107,7 +109,7 @@
 }
 
 
-#mySidenav li span{
+.sidenav li span{
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -115,27 +117,27 @@
 }
 
 /* Connect Accounts Span */
-#mySidenav li:nth-child(1) span{
+.sidenav li:nth-child(1) span{
     background-image: var(--connect-accounts-icon);
 }
 
 /* General Info Span */
-#mySidenav li:nth-child(2) span{
+.sidenav li:nth-child(2) span{
     background-image: var(--general-info-icon);
 }
 
 /* Budget Span */
-#mySidenav li:nth-child(3) span{
+.sidenav li:nth-child(3) span{
     background-image: var(--budget-icon);
 }
 
 /* Assets & Liabilities Span */
-#mySidenav li:nth-child(4) span{
+.sidenav li:nth-child(4) span{
     background-image: var(--assets-liabilities-icon);
 }
 
 /* Insurance Span */
-#mySidenav li:nth-child(5) span{
+.sidenav li:nth-child(5) span{
     background-image: var(--insurance-icon);
 }
 
@@ -661,7 +663,7 @@ tr.spaceUnder th {
 }
 
 .longterm-care-active{
-    background-image: url('./images/defensivechecklist/LongtermCare.png');
+    background-image: var(--longterm-care);
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -669,11 +671,10 @@ tr.spaceUnder th {
 
 
 .longterm-care-disabled{
-    background-image: url('./images/defensivechecklist/LongtermCare.png');
+    background-image: var(--longterm-care-disabled);
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
-    opacity: 0.2;
 }
 
 
@@ -691,7 +692,6 @@ tr.spaceUnder th {
     background-size: 100%;
     background-position: 50%;
     background-repeat: no-repeat;
-    opacity: 0.2;
 }
 
 .mortgage-insurance-active{
@@ -849,8 +849,40 @@ tr.spaceUnder th {
   
 
 @media only screen and (max-width: 629px){
-    #mySidenav li {
-        padding: 10px;
+
+
+
+    .discover-sidebar li {
+        padding: 10px; 
+        opacity: 0;
+        transition: 0.2s ease-in-out;
+
+    }
+    .discover-sidebar--after li {
+        padding: 10px; 
+        opacity: 1;
+        transition: 0.2s ease-in-out;
+
+    }
+
+    .discover-sidebar ul {
+        list-style: none;
+        padding-left: 0px;
+        width: 100%;
+        transform: translateY(-250px);
+        z-index: -1;
+        transition: 0.2s ease-in-out;
+    }
+
+    .discover-sidebar .sidebar-stats{
+        transform: translateY(-460px);
+        transition: 0.2s ease-in-out;
+    }
+
+    .discover-sidebar--after .sidebar-stats{
+        transform: translateY(0px);
+        transition: 0.2s ease-in-out;
+
     }
 
     .discover-drop-arrow{
@@ -870,6 +902,13 @@ tr.spaceUnder th {
         width: 100%;
         position: absolute;
         transition: 0.2s ease-in-out;
+    }
+
+    .discover-sidebar--after ul{
+        transition: 0.2s ease-in-out;
+        transform: translateY(0px);
+        z-index: 0;
+
     }
 
     .navtabs-sub-con{
