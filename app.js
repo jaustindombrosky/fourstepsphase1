@@ -4,7 +4,16 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 const pages = require('./routes/pages');
 const path = require('path');
+
+
+const users = require('./routes/api/users');
+
+
 const app = express();
+app.use(express.static(__dirname));
+
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -32,7 +41,10 @@ app.use(passport.initialize());
 // Passport Config
 // require('./config/passport')(passport);
 
+// Use Routes 
+app.use('/api/users', users)
 
+// Use Pages
 app.get('/register',function(req,res){
     res.sendFile(path.join(__dirname + '/views/' + 'register.html'));
 });

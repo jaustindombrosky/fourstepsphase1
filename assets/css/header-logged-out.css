@@ -1,0 +1,81 @@
+#masthead{
+    position: relative;
+    margin-bottom: 30px;
+    height: 97px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #F8F8F8;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #d4d4d4;
+
+}
+
+#mast-nav{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mast-list-con{
+    width: 100%;
+}
+
+.mast-brand{
+    padding-right: 20px;
+}
+
+.collapse{
+
+}
+
+.login-btn{
+    background-color: #F1BD42;
+    background: #F1BD42;
+}
+
+.navbar-links{
+    text-transform: uppercase;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #595959;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    align-items: center;
+}
+
+.navbar-links ul{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.login-sign-group{
+    display: flex;
+    justify-content: space-around;
+    max-width: 200px;
+    width: 100%;
+}
+
+
+#signup-btn{
+    background-color: #F1BD42;
+    color: white;
+    font-weight: normal;
+}
+
+#login-btn{
+    background: #929292;
+    color: white;
+    font-weight: normal;
+}
+
+.navbar-links a {
+    color: #595959;
+
+}

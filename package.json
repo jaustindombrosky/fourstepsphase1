@@ -20,6 +20,7 @@
   "homepage": "https://github.com/jaustindombrosky/fourstepsphase1#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "debug": "^3.1.0",
     "dotenv": "^6.0.0",
@@ -30,6 +31,7 @@
     "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.2.5",
     "passport": "^0.4.0",
-    "passport-jwt": "^4.0.0"
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.4.0"
   }
 }
