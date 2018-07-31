@@ -26,6 +26,10 @@
     --life-insurance-disabled: url('../assets/images/defensivechecklist/life-insurance-disabled.svg');
     --hsa-icon: url('../assets/images/discover/hsa-icon.svg');
     --auto-loan-icon: url('../assets/images/discover/auto-loan-icon.svg');
+<<<<<<< HEAD
+=======
+    --auto-insurance-disabled: url('../assets/images/defensivechecklist/auto-insurance-disabled.svg');
+>>>>>>> master
     --student-loan-icon: url('../assets/images/discover/student-loan-icon.svg');
     --disability-insurance: url('../assets/images/defensivechecklist/disability-insurance.svg');
     --disability-insurance-disabled: url('../assets/images/defensivechecklist/disability-insurance-disabled.svg');
@@ -33,6 +37,17 @@
     --debt-elimination-disabled: url('../assets/images/defensivechecklist/debt-elimination-disabled.svg');
     --blue-text-color: #3EAEB4;
     --credit-card-icon: url('../assets/images/discover/credit-card-icon.svg');
+<<<<<<< HEAD
+=======
+    --longterm-care: url('../assets/images/defensivechecklist/longterm-care.svg');
+    --longterm-care-disabled: url('../assets/images/defensivechecklist/longterm-care-disabled.svg');
+    --tax-planning: url('../assets/images/offensivechecklist/tax-planning.svg');
+    --tax-planning-disabled: url('../assets/images/offensivechecklist/tax-planning-disabled.svg');
+    --mortgage-insurance: url('../assets/images/defensivechecklist/mortgage-insurance.svg');
+    --mortgage-insurance-disabled: url('../assets/images/defensivechecklist/mortgage-insurance-disabled.svg');
+    --rate-of-return: url('../assets/images/offensivechecklist/rate-of-return.svg');
+    --rate-of-return-disabled: url('../assets/images/offensivechecklist/rate-of-return-disabled.svg')
+>>>>>>> master
 
 }
 
@@ -52,7 +67,11 @@
     width: 100%;
 }
 
+<<<<<<< HEAD
 #mySidenav li {
+=======
+.sidenav li {
+>>>>>>> master
     width: 100%;
     min-height: 40px;
     display: flex;
@@ -63,7 +82,11 @@
 }
 
 
+<<<<<<< HEAD
 #mySidenav li:hover {
+=======
+.sidenav li:hover {
+>>>>>>> master
     background: #C9C9C9;
     cursor: pointer;
 }
@@ -90,7 +113,11 @@
 
 
 
+<<<<<<< HEAD
 #mySidenav li{
+=======
+.sidenav li{
+>>>>>>> master
     display: flex;
     padding: 10px;
 }
@@ -106,7 +133,11 @@
 }
 
 
+<<<<<<< HEAD
 #mySidenav li span{
+=======
+.sidenav li span{
+>>>>>>> master
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -114,27 +145,175 @@
 }
 
 /* Connect Accounts Span */
+<<<<<<< HEAD
 #mySidenav li:nth-child(1) span{
+=======
+.sidenav li:nth-child(1) span{
+>>>>>>> master
     background-image: var(--connect-accounts-icon);
 }
 
 /* General Info Span */
+<<<<<<< HEAD
 #mySidenav li:nth-child(2) span{
+=======
+.sidenav li:nth-child(2) span{
+>>>>>>> master
     background-image: var(--general-info-icon);
 }
 
 /* Budget Span */
+<<<<<<< HEAD
 #mySidenav li:nth-child(3) span{
+=======
+.sidenav li:nth-child(3) span{
+>>>>>>> master
     background-image: var(--budget-icon);
 }
 
 /* Assets & Liabilities Span */
+<<<<<<< HEAD
 #mySidenav li:nth-child(4) span{
     background-image: var(--assets-liabilities-icon);
 }
 
 /* Insurance Span */
 #mySidenav li:nth-child(5) span{
+    background-image: var(--insurance-icon);
+}
+
+.sidebar-stats{
+    background: #F2F2F2;
+    width: 100%;
+    height: 200px;
+    font-family: var(--LibreFranklin);
+}
+
+/*SIDEBAR STATS STUFF*/
+  .sidebar-stats{
+     background: #F2F2F2;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+  
+  .sidebar-row {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .sidebar-row tr{
+    width: 100%;
+  }
+  
+  .sidebar-row tr th:nth-child(1){
+    text-align: left;
+  }
+  
+  .sidebar-row tr th:nth-child(2){
+    text-align: right;
+  }
+  
+  .sidebar-row tr:nth-child(1){
+    color: #3DB488; 
+  }
+  
+  .sidebar-row tr:nth-child(2){
+    color: #D65858;
+  }
+  
+  .sidebar-row tr:nth-child(3){
+    color: #707070; 
+  }
+  
+  .sidebar-row tr:nth-child(3) th{
+    border-top: 1px solid #707070;
+  }
+/*SIDEBAR STATS STUFF*/
+
+  
+
+
+.content-container{
+    width: 100%;
+    margin-left: 213.33px;
+}
+
+.content-wrapper{
+    
+}
+
+.get-plan-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.get-plan-title{
+    font-family: 'Poppins', 'sans-serif';
+    color: #4BB484;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.get-plan-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;    
+}
+
+.price-plans-div{
+    width: 100%;
+    background: #D5D5D5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', 'sans-serif';
+    padding: 15px;
+    color: #707070;
+    box-shadow: var(--dropShadowValue);
+}
+
+.price-plans-div label:nth-child(1){
+    font-size: 25px;
+    padding-bottom: 5px;
+    
+}
+
+.price-plans-div label:nth-child(2){
+    font-size: 15px;
+}
+
+.checkout-item{
+    margin-top: 10px;
+    background: #D5D5D5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #4AAEB5;
+    box-shadow: var(--dropShadowValue);
+}
+.card{
+    background: #F2F2F2;
+    width: calc(100% - 80px);
+    margin: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    box-shadow: var(--dropShadowValue);
+=======
+.sidenav li:nth-child(4) span{
+    background-image: var(--assets-liabilities-icon);
+}
+
+/* Insurance Span */
+.sidenav li:nth-child(5) span{
     background-image: var(--insurance-icon);
 }
 
@@ -470,6 +649,222 @@
     font-weight: 300;
     margin-top: 30px;
     color: #707070;
+>>>>>>> master
+}
+
+.container-flex{
+    display: flex;
+    height: calc(100vh - 90px);
+    overflow-y: auto;
+}
+
+.card-title{
+    font-family: 'Poppins', 'sans-serif';
+    color: #4BB484;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.card-title-checklist{
+    font-family: 'Poppins', 'sans-serif';
+    color: #4BB484;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.placeholder-height{
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-subtitle{
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: bolder;
+    margin-top: 0px;
+    color: #4AAEB5;
+}
+
+.title-wrapper{
+    height: 50px;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.title-wrapper-column{
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.title-wrapper-column label:nth-child(2){
+    color: var(--blue-text-color);
+}
+
+
+.checklist-title-wrapper{
+    height: 50px;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #D5D5D5;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.checklist-title-wrapper label{
+   color: #707070;
+   font-size: 24px;
+}
+
+.card-content-group{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    width: 100%;
+}
+
+.subtitle-labels{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #707070;
+}
+
+.card-content-child{
+    background: #E4E4E4;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: var(--dropShadowValue);
+}
+
+.card-content-column{
+    height: 100%;
+}
+
+.card-content-column-child{
+    width: 100%;
+}
+
+.card-combined-content-child{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: var(--dropShadowValue);
+}
+
+.navtabs-sub-con{
+    display: none;
+}
+
+
+.navtabs-sub-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* border: 1px solid #929292; */
+    color: #707070;
+}
+
+
+.navtabs-sub-child label{
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+
+.navtabs-sub-child label{
+    cursor: pointer;
+}
+
+.navtabs-sub-child:hover {
+    background: #C9C9C9;
+    cursor: pointer;
+}
+
+.discover-sidebar--after{
+    display: none;
+}
+
+
+.networth-header{
+    margin-top: 20px;
+    background-color: #D5D5D5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: bold;
+    box-shadow: var(--dropShadowValue);
+}
+
+
+
+.cashflow-header{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: bold;
+    background-color: #EEEEEE;
+    box-shadow: var(--dropShadowValue);
+}
+
+.cashflow-header label:nth-child(1){
+    color: #C6C6C6;
+}
+
+
+.cashflow-header label:nth-child(2){
+    color: #B4E1CE;
+}
+
+.networth-header label:nth-child(1){
+    color: #707070;
+}
+
+<<<<<<< HEAD
+.networth-header label:nth-child(2){
+    color: #D25956;
+=======
+/*Personal Checking Icon*/
+.card-content-column-child .networth-table tr:nth-child(1) th span{
+    background-image: var(--personal-checking-icon);
+>>>>>>> master
+}
+/*Personal Checking Icon*/
+
+<<<<<<< HEAD
+.card-content-column-child table tr th span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: var(--dropShadowValue);
+}
+
+.card-content-column-child table{
+    font-family: var(--LibreFranklin);
+    font-weight: 300;
+    margin-top: 30px;
+    color: #707070;
 }
 
 
@@ -539,6 +934,68 @@
     text-align: right;
 }
 
+=======
+/*Personal Savings Icon*/
+    .card-content-column-child .networth-table tr:nth-child(2) th span{
+        background-image: var(--personal-savings-icon);
+    }
+/*Personal Savings Icon*/
+
+/*IRA Icon*/
+    .card-content-column-child .networth-table tr:nth-child(3) th span{
+        background-image: var(--ira-icon);
+    }
+/*IRA Icon*/
+
+/*Stocks Icon*/
+    .card-content-column-child .networth-table tr:nth-child(4) th span{
+        background-image: var(--stocks-icon);
+    }
+/*Stocks Icon*/ 
+
+/*HSA Icon*/
+    .card-content-column-child .networth-table tr:nth-child(5) th span{
+        background-image: var(--hsa-icon);
+    }
+/*HSA Icon*/
+
+/*Crypto Currency Icon*/
+    .card-content-column-child .networth-table tr:nth-child(6) th span{
+        background-image: var(--connect-accounts-icon);
+    }
+/*Crypto Currency Icon*/
+
+
+/*Auto Loan Icon*/
+    .card-content-column-child .cashflow-table tr:nth-child(1) th span{
+        background-image: var(--auto-loan-icon);
+    }
+/*Auto Loan Icon*/
+
+/*Student Loan Icon*/
+    .card-content-column-child .cashflow-table tr:nth-child(2) th span{
+        background-image: var(--student-loan-icon);
+    }
+/*Student Loan Icon*/
+
+/*Credit Card Icon*/
+    .card-content-column-child .cashflow-table tr:nth-child(3) th span{
+        background-image: var(--credit-card-icon);
+    }
+/*Credit Card Icon*/
+
+
+
+
+.th-icon-con{
+    width: 25px;
+}
+
+.th-currency-con{
+    text-align: right;
+}
+
+>>>>>>> master
 tr.spaceUnder th {
     padding-bottom: 1em;
 }
@@ -644,6 +1101,7 @@ tr.spaceUnder th {
     background-repeat: no-repeat;
 }
 
+<<<<<<< HEAD
 
 .health-insurance-active{
     background-image: var(--health-insurance);
@@ -681,9 +1139,209 @@ tr.spaceUnder th {
     background-position: 50%;
     background-repeat: no-repeat;
 }
+=======
+
+.health-insurance-active{
+    background-image: var(--health-insurance);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.health-insurance-disabled{
+    background-image: var(--health-insurance-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.longterm-care-active{
+    background-image: var(--longterm-care);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+
+.longterm-care-disabled{
+    background-image: var(--longterm-care-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+
+
+.auto-insurance-active{
+    background-image: var(--auto-loan-icon);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+
+.auto-insurance-disabled{
+    background-image: var(--auto-insurance-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.mortgage-insurance-active{
+    background-image: var(--mortgage-insurance);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.mortgage-insurance-disabled{
+    background-image: var(--mortgage-insurance-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
 
 /* OFFENSIVE */
 
+.tax-planning-active{
+    background-image: var(--tax-planning);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+
+.tax-planning-disabled{
+    background-image: var(--tax-planning-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+}
+
+.major-purchase-active{
+    background-image: var(--major-purchase);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.major-purchase-disabled{
+    background-image: var(--major-purchase-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.rate-of-return-active{
+    background-image: var(--rate-of-return);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.rate-of-return-disabled{
+    background-image: var(--rate-of-return-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+}
+
+.fees-and-commissions-active{
+    background-image: var(--fees-and-commissions);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.fees-and-commissions-disabled{
+    background-image: var(--fees-and-commissions-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    
+}
+
+.diversification-plan-active{
+    background-image: var(--diversification-plan);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.diversification-plan-disabled{
+    background-image: var(--diversification-plan-disabled);
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+
+@media only screen and (max-width: 1031px){
+    #graph-projections-parent{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 911px){
+    .container-flex{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #sidebar{
+        overflow: hidden;
+    }
+
+    .navtabs-sub-con{
+        display: flex;
+        width: 100%;
+        height: 40px;
+        background: #D5D5D5;
+        justify-content: space-around;
+        align-items: center;
+        border-top: #e7e7e7 1px solid;
+    }
+    
+    .discover-sidebar{
+        display: none;
+        position: relative;
+        height: 40px;
+        background-color: #D5D5D5;
+        width: 100%;
+        max-width: inherit;
+    }
+
+    .content-container{
+        margin-left: 0;
+    }
+
+    .card-content-group{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        width: 100%;
+    }
+
+    .discover-sidebar{
+        display: flex;
+        flex-direction: column;
+        height: 0px;
+        background-color: #D5D5D5;
+        width: 100%;
+        position: absolute;
+        transition: 0.2s ease-in-out;
+        opacity: 0;
+    }
+}
+  
+>>>>>>> master
+
+@media only screen and (max-width: 629px){
+
+<<<<<<< HEAD
 .tax-planning-active{
     background-image: url('./images/offensivechecklist/TaxPlanning.png');
     background-size: 100%;
@@ -781,9 +1439,92 @@ tr.spaceUnder th {
         grid-gap: 40px;
         width: 100%;
     }
+=======
+    .sidebar-stats{
+        font-size: 17px;
+    }
+
+    .discover-sidebar li {
+        padding: 10px; 
+        opacity: 0;
+        transition: 0.2s ease-in-out;
+    }
+    .discover-sidebar--after li {
+        padding: 10px; 
+        opacity: 1;
+        transition: 0.2s ease-in-out;
+
+    }
+
+    .discover-sidebar ul {
+        list-style: none;
+        padding-left: 0px;
+        width: 100%;
+        transform: translateY(-250px);
+        z-index: -1;
+        transition: 0.2s ease-in-out;
+    }
+
+    .discover-sidebar .sidebar-stats{
+        transform: translateY(-460px);
+        transition: 0.2s ease-in-out;
+    }
+
+    .discover-sidebar--after .sidebar-stats{
+        transform: translateY(0px);
+        transition: 0.2s ease-in-out;
+
+    }
+
+    .discover-drop-arrow{
+        display: flex;
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .discover-sidebar--after{
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 90px);
+        background-color: #D5D5D5;
+        width: 100%;
+        position: absolute;
+        transition: 0.2s ease-in-out;
+    }
+
+    .discover-sidebar--after ul{
+        transition: 0.2s ease-in-out;
+        transform: translateY(0px);
+        z-index: 0;
+
+    }
+
+    .navtabs-sub-con{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .card-title{
+        font-size: 17px;
+    }
+
+     .networth-header label{
+        font-size: 20px;
+    }
+
+    .cashflow-header label{
+        font-size: 20px;
+    }
+
+>>>>>>> master
 }
   
 
+<<<<<<< HEAD
 @media only screen and (max-width: 629px){
     #mySidenav li {
         padding: 10px;
@@ -818,3 +1559,20 @@ tr.spaceUnder th {
         font-size: 17px;
     }
 }
+=======
+
+@media only screen and (max-width: 400px){
+    .card-title{
+        font-size: 17px;
+    }
+
+     .networth-header label{
+        font-size: 20px;
+    }
+
+    .cashflow-header label{
+        font-size: 20px;
+    }
+}
+
+>>>>>>> master

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/addname" method="POST">
+  First name:<br>
+  <input type="text" name="generalInfo[firstName]" value="Mickey">
+  <br>
+  Last name:<br>
+  <input type="text" name="generalInfo[lastName]" value="Mouse">
+  <br><br>
+<h4>GeneralInformation </h4>
+What are important elements of finance that are most important to you ? :<br>
+  <input type="checkbox" name="generalInfo[finance]" value="Deb elimination plan">Deb Elimination Plan<br>
+  <input type="checkbox" name="generalInfo[finance]" value="growing my savings"> Growing My Savings<br>
+  <input type="checkbox" name="generalInfo[finance]" value="growing my savings"> Purchasing a Home<br>
+  <input type="checkbox" name="generalInfo[finance]" value="growing my savings"> Paying of Students Loans <br>
+  <input type="checkbox" name="generalInfo[finance]" value="growing my savings"> My Next Investment<br>
+  <input type="checkbox" name="generalInfo[finance]" value="growing my savings"> Creating an Emergency Fund<br>
+  <input type="checkbox" name="generalInfo[finance]" value="growing my savings"> Saving for Retirement<br>
+  <input type="checkbox" name="generalInfo[finance]" value="growing my savings"> Plan for Taxes<br>
+  <input type="checkbox" name="generalInfo[finance]" value="growing my savings"> Paying Of Credit Card Debit<br>
+  <input type="checkbox" name="generalInfo[finance]" value="growing my savings"> Insuranace Planning<br>
+
+Do you have a written financial plan ?:<br>
+  <input type="radio" name="generalInfo[financeChoice]" value="yes"> yes<br>
+  <input type="radio" name="generalInfo[financeChoice]" value="no"> no<br>
+<h4>Income</h4>
+Monthly expense:<br>
+  <input type="text" name="income[monthly]">
+  <br>
+Asset Contribution:<br>
+  <input type="text" name="income[asset]">
+  <br>
+<h4>Expenses</h4>
+  Monthly expense:<br>
+    <input type="text" name="expenses[monthly]">
+    <br>
+Asset Contribution:<br>
+    <input type="text" name="expenses[asset]">
+    <br>
+<h4>Savings</h4>
+Checking:<br>
+    <input type="text" name="savings[checking]">
+    <br>
+Savings:<br>
+    <input type="text" name="savings[savings]">
+    <br>
+<h4>Liabilities</h4>
+Mortgage:<br>
+    <input type="text" name="liabilities[checking]">
+    <br>
+Line of Credit:<br>
+    <input type="text" name="liabilities[savings]">
+
+  <input type="submit" value="Submit">
+
+</form>
+
+<a href ="http://localhost:3000/">go back</a>
+</body>
+</html>

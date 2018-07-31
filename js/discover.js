@@ -17,6 +17,16 @@ let user = {
         retirementplanning: false,
         wealthaccumulation: false,
         majorpurchaseplan: false,
+<<<<<<< HEAD
+=======
+        longtermcare: false,
+        autoinsurance: false,
+        taxplanning: false,
+        mortgageinsurance: false,
+        rateofreturn: false,
+        diversificationplan: false,
+        feesandcommissions: false
+>>>>>>> master
     }
 }
 
@@ -34,6 +44,7 @@ let cashflowValue = {
     sidebarid: 'cashflow-sb'
 }
 
+<<<<<<< HEAD
 let healthinsuranceObject = {
     active: user.checklist.healthinsurance,
     id: 'heath-insurance-strategy',
@@ -43,21 +54,128 @@ let healthinsuranceObject = {
 
 let emergencyfundObject = {
     active: user.checklist.healthinsurance,
+=======
+
+let valuesArray = [networthValue, cashflowValue];
+
+
+
+
+
+//STRATEGY OBJECTS
+
+let healthinsuranceObject = {
+    active: user.checklist.healthinsurance,
+    id: 'health-insurance-strategy',
+    activeClassName: 'strategy-circle health-insurance-active',
+    disableClassName: 'strategy-circle health-insurance-disabled'
+}
+
+let debteliminationObject = {
+    active: user.checklist.debtelimination,
+    id: 'debt-elimination-strategy',
+    activeClassName: 'strategy-circle debt-elimination-active',
+    disableClassName: 'strategy-circle debt-elimination-disabled'
+}
+
+let disabilityinsuranceObject = {
+    active: user.checklist.disabilityinsurance,
+    id: 'disability-insurance-strategy',
+    activeClassName: 'strategy-circle disability-insurance-active',
+    disableClassName: 'strategy-circle disability-insurance-disabled'
+}
+
+let emergencyfundObject = {
+    active: user.checklist.emergencyfund,
+>>>>>>> master
     id: 'personal-emergency-fund-strategy',
     activeClassName: 'strategy-circle  personal-emergency-fund-active',
     disableClassName: 'strategy-circle  personal-emergency-fund-disabled'
 }
 
+<<<<<<< HEAD
 let majorpurchaseplanObject = {
     active: user.checklist.healthinsurance,
+=======
+let autoinsuranceObject = {
+    active: user.checklist.autoinsurance,
+    id: 'auto-insurance-strategy',
+    activeClassName: 'strategy-circle auto-insurance-active',
+    disableClassName: 'strategy-circle auto-insurance-disabled'
+}
+
+let majorpurchaseplanObject = {
+    active: user.checklist.majorpurchaseplan,
+>>>>>>> master
     id: 'major-purchase-strategy',
     activeClassName: 'strategy-circle  major-purchase-active',
     disableClassName: 'strategy-circle  major-purchase-disabled'
 }
 
+<<<<<<< HEAD
 let valuesArray = [networthValue, cashflowValue];
 
 let strategyChecklist = [emergencyfundObject, majorpurchaseplanObject];
+=======
+let lifeinsuranceObject = {
+    active: user.checklist.lifeinsurance,
+    id: 'life-insurance-strategy',
+    activeClassName: 'strategy-circle   life-insurance-active',
+    disableClassName: 'strategy-circle  life-insurance-disabled'
+}
+
+let longtermcareObject = {
+    active: user.checklist.longtermcare,
+    id: 'longterm-care-strategy',
+    activeClassName: 'strategy-circle longterm-care-active',
+    disableClassName: 'strategy-circle longterm-care-disabled'
+}
+
+let mortgageinsuranceObject = {
+    active: user.checklist.mortgageinsurance,
+    id: 'mortgage-insurance-strategy',
+    activeClassName: 'strategy-circle mortgage-insurance-active',
+    disableClassName: 'strategy-circle mortgage-insurance-disabled'
+}
+
+let rateofreturnObject = {
+    active: user.checklist.rateofreturn,
+    id: 'rate-of-return-strategy',
+    activeClassName: 'strategy-circle rate-of-return-active',
+    disableClassName: 'strategy-circle rate-of-return-disabled'
+}
+
+let diversificationplanObject = {
+    active: user.checklist.diversificationplan,
+    id: 'diversification-plan-strategy',
+    activeClassName: 'strategy-circle diversification-plan-active',
+    disableClassName: 'strategy-circle diversification-plan-disabled'
+}
+
+let taxplanningObject = {
+    active: user.checklist.taxplanning,
+    id: 'tax-planning-strategy',
+    activeClassName: 'strategy-circle tax-planning-active',
+    disableClassName: 'strategy-circle tax-planning-disabled'
+}
+
+let feesandcommissionsObject = {
+    active: user.checklist.taxplanning,
+    id: 'fees-and-commissions-strategy',
+    activeClassName: 'strategy-circle fees-and-commissions-active',
+    disableClassName: 'strategy-circle fees-and-commissions-disabled'
+}
+
+
+let strategyChecklist = [emergencyfundObject, debteliminationObject, disabilityinsuranceObject, autoinsuranceObject, majorpurchaseplanObject,  healthinsuranceObject, lifeinsuranceObject, longtermcareObject, mortgageinsuranceObject, rateofreturnObject, disabilityinsuranceObject, diversificationplanObject, taxplanningObject, feesandcommissionsObject];
+
+
+//STRATEGY OBJECTS
+
+
+
+
+>>>>>>> master
 
 let freeMemberProjectionDiv =`
     <div class='card-content-column'>
@@ -160,7 +278,11 @@ function handleToggle(){
     if(discoverSideBar.className === "discover-sidebar"){
         console.log('on')
         discoverSideBar.className = "discover-sidebar--after";
+<<<<<<< HEAD
     } else if(sidebar.className === 'discover-sidebar--after') {
+=======
+    } else if(discoverSideBar.className === 'discover-sidebar--after') {
+>>>>>>> master
         discoverSideBar.className = 'discover-sidebar';
     }
 }

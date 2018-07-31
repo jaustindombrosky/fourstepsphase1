@@ -1,0 +1,35 @@
+label {
+    color: #3db488;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+h2 {
+    color: #3db488;
+    font-weight: bold;
+    text-align: center;
+}
+
+h4 {
+    color: #3db488;
+    font-weight: bold;
+    text-align: center;
+}
+
+h6 {
+    font-size: 16px;
+    color: gray;
+    font-weight: bold;
+}
+
+p {
+    line-height: 50%;
+    color: gray;
+    font-size: 12px;
+}
+
+.section {
+    background-color: #e4e4e4;
+    border: 10px solid white;
+}

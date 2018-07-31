@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>FourSteps | Discover</title>
@@ -15,35 +15,47 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 </head>
+
 <body>
     <div class="container-fluid no-padding-left-right foursteps-header">
         <nav class="navbar  navbar-default">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <div class="navbar-brand">
-                  <img class="logo-container" src="./assets/images/placeholders/FourStepsLogoLandon.svg"/>
-              </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">
+                    <img class="logo-container" src="./assets/images/placeholders/FourStepsLogoLandon.svg" />
+                </div>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="contact.html">Purchase Full Account</a></li>
-                <li><a href="portfolio.html">Sign Out</a></li>                            
-              </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="contact.html">Purchase Full Account</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Sign Out</a>
+                    </li>
+                </ul>
             </div>
+<<<<<<< HEAD
           </div>
         </nav>
 
 
   
 
+=======
+    </div>
+    </nav>
+>>>>>>> master
 
-        <!-- <label class="section-title">Discover</label> -->
+    <div class="container-fluid no-padding-left-right">
 
+<<<<<<< HEAD
         <div class="container-fluid no-padding-left-right">
 
             <nav class="navtabs-container">
@@ -369,5 +381,320 @@
 
     <script src="./js/discover.js" />
     
+=======
+        <nav class="navtabs-container">
+            <div class="navtabs-child-selected" onclick="toggleSideBar()" id="discover-tab">
+                <label class="discover-label">Discover
+                    <span class="discover-drop-arrow">▼</span>
+                </label>
+            </div>
+            <a class="navtabs-child" href="./plan2.html">
+                <label>Plan</label>
+            </a>
+            <a class="navtabs-child" href="./automate4.html">
+                <label>Automate</label>
+            </a>
+            <a class="navtabs-child" href="./live3.html">
+                <label>Live</label>
+            </a>
+
+        </nav>
+        <nav class="navtabs-sub-con">
+            <div class="navtabs-sub-child">
+                <label>Connect Accounts</label>
+            </div>
+            <div class="navtabs-sub-child">
+                <label>General Info</label>
+            </div>
+            <div class="navtabs-sub-child">
+                <label>Budget</label>
+            </div>
+            <div class="navtabs-sub-child">
+                <label> Assets & Liabilities</label>
+            </div>
+            <div class="navtabs-sub-child">
+                <label>Insurance</label>
+            </div>
+        </nav>
+        <div class="container-flex no-padding-left-right">
+            <section id="sidebar" class="discover-sidebar">
+                <ul id="mySidenav" class="sidenav">
+                    <li>
+                        <span></span> Connect Accounts</li>
+                    <li>
+                        <span></span>General Info</li>
+                    <li>
+                        <span></span> Budget</li>
+                    <li>
+                        <span></span> Assets & Liabilities</li>
+                    <li>
+                        <span></span>Insurance</li>
+                </ul>
+                <div class="sidebar-stats">
+                    <table class="sidebar-row">
+                        <tr>
+                            <th>Assets</th>
+                            <th>$14,806</th>
+                        </tr>
+                        <tr>
+                            <th>Liabilities</th>
+                            <th>($28,320)</th>
+                        </tr>
+                        <tr>
+                            <th>Net Worth</th>
+                            <th>(
+                                <span id="networth-sb"></span>)</th>
+                        </tr>
+                    </table>
+                    <table class="sidebar-row">
+                        <tr>
+                            <th>Income</th>
+                            <th>$14,806</th>
+                        </tr>
+                        <tr>
+                            <th>Expenses</th>
+                            <th>($2,515)</th>
+                        </tr>
+                        <tr>
+                            <th>Cashflow</th>
+                            <th id="cashflow-sb"> </th>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section class="content-container landons-border2">
+                <div class="content-wrapper">
+                    <div id="become-foursteps-member" class="card">
+                        <div class="title-wrapper">
+                            <label class="card-title">Become a FourSteps Member</label>
+                        </div>
+                        <div class="card-content-group">
+                            <div class="card-content-child">
+                                <p>Receive a personalized plan focused specifically to your goals
+                                    <br>
+                                    <ul>
+                                        <li>Cash Flow Analysis</li>
+                                        <li>Debt Elimination Plan</li>
+                                        <li>Major Purchase Plan</li>
+                                        <li>Investment Diversification Plan</li>
+                                        <li>Insurance Analysis</li>
+                                    </ul>
+                                    <li>24/7 access to fininancial coaches for any and all financial advice</li>
+                                    <li>Real-time tracking of progress towards finanicial goals</li>
+                                    <li>Access to FourSteps Financial Literacy Library</li>
+                                </p>
+                            </div>
+                            <div class="card-content-child get-plan-div">
+                                <label class="get-plan-title">Get a plan, automate your cash flow, and live knowing your goals will be achieved.</label>
+                                <div class="get-plan-content">
+                                    <div class="price-plans-div">
+                                        <label>$24.99/month</label>
+                                        <label>or $250/year</label>
+                                    </div>
+                                    <div class="checkout-item">
+                                        <label>Checkout</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="graph-projections-parent" class="card-content-group">
+
+                    </div>
+                </div>
+
+                <div id="financial-snapshot" class="card">
+                    <div id="financial-snapshot-text" class="title-wrapper">
+                        <label class="card-title">Financial Snapshot</label>
+                    </div>
+                    <div id="graph-projections-parent" class="card-content-group">
+
+                        <div class="card-content-column">
+                            <div id="networth-header" class="title-wrapper networth-header">
+                                <label>Networth</label>
+                                <label id="networth-label"></label>
+                            </div>
+                            <div class="title-wrapper subtitle-labels">
+                                <label>Total Assets</label>
+                                <label>$28,320</label>
+                            </div>
+                            <div class="card-content-column-child">
+                                <table class="networth-table" style="width:100%">
+                                    <tr class="spaceUnder">
+                                        <th class="th-icon-con">
+                                            <span></span>
+                                        </th>
+                                        <th>Personal Checking</th>
+                                        <th class="th-currency-con">$1,500</th>
+                                    </tr>
+                                    <tr class="spaceUnder">
+                                        <th class="th-icon-con">
+                                            <span></span>
+                                        </th>
+                                        <th>Personal Savings</th>
+                                        <th class="th-currency-con">$1,500</th>
+                                    </tr>
+                                    <tr class="spaceUnder">
+                                        <th class="th-icon-con">
+                                            <span></span>
+                                        </th>
+                                        <th>IRA</th>
+                                        <th class="th-currency-con">$1,500</th>
+                                    </tr>
+                                    <tr class="spaceUnder">
+                                        <th class="th-icon-con">
+                                            <span></span>
+                                        </th>
+                                        <th>Stocks</th>
+                                        <th class="th-currency-con">$1,500</th>
+                                    </tr>
+                                    <tr class="spaceUnder">
+                                        <th class="th-icon-con">
+                                            <span></span>
+                                        </th>
+                                        <th>HSA</th>
+                                        <th class="th-currency-con">$1,500</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="th-icon-con">
+                                            <span></span>
+                                        </th>
+                                        <th>Crypto Currency</th>
+                                        <th class="th-currency-con">$1,500</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-content-column">
+                            <div id="cashflow-header" class="title-wrapper cashflow-header">
+                                <label>Cashflow</label>
+                                <label id="cashflow-label"></label>
+                            </div>
+                            <div class="title-wrapper subtitle-labels">
+                                <label>Total Assets</label>
+                                <label>$14,806</label>
+                            </div>
+
+                            <div class="card-content-column-child">
+                                <table class="cashflow-table" style="width:100%">
+                                    <tr class="spaceUnder">
+                                        <th class="th-icon-con">
+                                            <span></span>
+                                        </th>
+                                        <th>Auto Loan</th>
+                                        <th class="th-currency-con">$1,500</th>
+                                    </tr>
+                                    <tr class="spaceUnder">
+                                        <th class="th-icon-con">
+                                            <span></span>
+                                        </th>
+                                        <th>Student Loan</th>
+                                        <th class="th-currency-con">$1,500</th>
+                                    </tr>
+                                    <tr class="spaceUnder">
+                                        <th class="th-icon-con">
+                                            <span></span>
+                                        </th>
+                                        <th>Credit Card</th>
+                                        <th class="th-currency-con">$1,500</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="title-wrapper">
+                        <label class="card-title">Checklists</label>
+                    </div>
+                    <div class="card-content-group">
+                        <div class="card-content-column">
+                            <div class="checklist-title-wrapper">
+                                <label>Defense</label>
+                            </div>
+
+                            <div class="strategy-list-con">
+                                <div class="strategy-item">
+                                    <!-- <label>Emergency Fund</label> -->
+                                    <div id="personal-emergency-fund-strategy" class="strategy-circle personal-emergency-fund-active">
+                                    </div>
+                                </div>
+                                <div class="strategy-item">
+                                    <div class="strategy-circle debt-elimination-active "></div>
+                                    <!-- <label>Debt Elimination</label> -->
+                                </div>
+                                <div class="strategy-item">
+                                    <div class="strategy-circle life-insurance-active"></div>
+                                    <!-- <label>Life Insurance</label> -->
+                                </div>
+                                <div class="strategy-item">
+                                    <div class="strategy-circle disability-insurance-active"></div>
+                                    <!-- <label>Disability Insurance</label> -->
+                                </div>
+                                <div class="strategy-item">
+                                    <div class="strategy-circle health-insurance-active"></div>
+                                    <!-- <label>Health Insurance</label> -->
+                                </div>
+                                <div class="strategy-item">
+                                    <div class="strategy-circle longterm-care-active"></div>
+                                    <!-- <label>Longterm Health</label> -->
+                                </div>
+                                <div class="strategy-item">
+                                    <div class="strategy-circle auto-insurance-active"></div>
+                                    <!-- <label>Auto Insurance</label> -->
+                                </div>
+                                <div class="strategy-item">
+                                    <div class="strategy-circle mortgage-insurance-active"></div>
+                                    <!-- <label>Mortgage Insurance</label> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content-column">
+                            <div class="checklist-title-wrapper">
+                                <label>Offense</label>
+                            </div>
+
+                            <div class="strategy-list-con">
+                                <div class="strategy-item">
+                                    <div class="strategy-circle tax-planning-active"></div>
+                                    <!-- <label>Tax Planning</label> -->
+                                </div>
+                                <div class="strategy-item">
+                                    <div id="major-purchase-strategy" class="strategy-circle major-purchase-active">
+                                    </div>
+                                </div>
+                                <div class="strategy-item">
+                                    <div id="rate-of-return-strategy" class="strategy-circle rate-of-return-active">
+                                    </div>
+                                    <!-- <label>Rate Of Return</label> -->
+                                </div>
+                                <div class="strategy-item">
+                                    <div id="diversification-plan-strategy" class="strategy-circle diversification-plan-active">
+                                    </div>
+                                    <!-- <label> Diversification</label> -->
+                                </div>
+                                <div class="strategy-item">
+                                    <!-- <label>Fees and Commissions</label> -->
+                                    <div id="fees-and-commissions-strategy" class="strategy-circle fees-and-commissions-active">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        </section>
+    </div>
+
+    <script src="./js/discover.js" />
+
+>>>>>>> master
 </body>
+
 </html>
