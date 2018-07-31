@@ -1,0 +1,107 @@
+#masthead{
+    position: relative;
+    height: 97px;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+
+}
+
+#mast-nav{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mast-list-con{
+    width: 100%;
+}
+
+.mast-brand{
+    padding-right: 20px;
+
+}
+
+.collapse{
+
+}
+
+.logo-container{
+    max-width: 318px;
+    max-height: 62px;
+}
+
+.login-btn{
+    background-color: #F1BD42;
+    background: #F1BD42;
+}
+
+.navbar-links{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    align-items: center;
+}
+
+.navbar-links ul{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.login-sign-group{
+    display: flex;
+    justify-content: space-around;
+    max-width: 200px;
+    width: 100%;
+}
+
+.navbar-links-inner{
+    width: 100%;
+    max-width: 540px;
+    height: 33px;
+}
+
+.navbar-links-inner li {
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 16px;
+    font-weight: bold;
+    color: #707070;
+
+}
+
+#signup-btn{
+    width: 100px;
+    background-color: #F1BD42;
+    color: white;
+    font-weight: normal;
+    border-radius: 9px;
+    height: 40px;
+    font-family: 'Poppins', 'sans-serif';
+    text-transform: initial;
+    font-weight: 600;
+}
+
+#login-btn{
+    background: white;
+    color: #707070;
+    height: 40px;
+    width: 100px;
+    text-transform: initial;
+    font-weight: 600;
+
+
+
+}
+
+.navbar-links a {
+    color: #595959;
+
+}

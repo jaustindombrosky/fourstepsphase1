@@ -1,0 +1,46 @@
+.content-section{
+    display: block;
+    height: 408px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-section{
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.content-section-hero{
+    display: block;
+    height: 620px;
+    width: 100%;
+}
+
+.headline1{
+    font-size: 30px;
+    font-weight: 16px;
+}
+
+.headline2{
+
+}
+
+.landons-border1{
+    display: block;
+    border: 1px solid darkgray;
+    width: 70%;
+}
+
+.landons-border2{
+    width: 30%;
+    border: 1px solid grey;
+}
