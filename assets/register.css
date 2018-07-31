@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Poppins:400,500,600,700,900');
+
+
+.register-form{
+    width: 100%;
+
+    max-width: 450px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*FORMS*/
+   /* label focus color */
+   .input-field input:focus + label {
+    color: #292929 !important ;
+    font-family: 'Poppins', 'sans-serif' !important;
+    font-weight: bold;
+  }
+
+  .input-field label{
+      font-family: 'Poppins', 'sans-serif' !important;
+      font-weight: normal;
+  }
+
+  .input-field input:focus {
+    border-bottom: 2px solid #00B490 !important;
+  }
+
+/*FORMS*/
+
+
+.entry-wrapper{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.entry-title{
+    margin-top: 30px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 700;
+    margin: 0 0 1em;
+    color: #292929;
+    font-size: 1.6em;
+
+}
+
+
+.button-con-group{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-con-group button{
+    width: 40%;
+    text-transform: inherit;
+}
+
+.button-con-group button:nth-child(1){
+    background-color: #3ba1da;
+    
+}
+
+.button-con-group button:nth-child(2){
+    background-color: #eeeeee;
+    color: #666666;
+}
