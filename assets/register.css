@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Poppins:400,500,600,700,900');
 
+:root{
+    --Font1: 'Poppins', 'sans-serif';
+    --Font2: 'Libre Franklin', 'sans-serif';
+    --GreenColor: #3DB488;
+    --GreyColor1: #707070;
+    --ButtonBorderRadius1: 9px;
+    --IconBorderRadius: 50%;
+    --ContrastBtnColor: #EEBD13;
+    --TealColor: #3EAEB4;
+    --SubTextSize: 20px;
+}
+
 
 .register-form{
     width: 100%;
@@ -24,7 +36,7 @@
   }
 
   .input-field input:focus {
-    border-bottom: 2px solid #00B490 !important;
+    border-bottom: 1px solid #00B490 !important;
   }
 
 /*FORMS*/
@@ -54,6 +66,10 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    font-family: var(--Font1);
+    font-weight: 500;
+    text-align: center;
+
 }
 
 .button-con-group button{
@@ -63,10 +79,15 @@
 
 .button-con-group button:nth-child(1){
     background-color: #3ba1da;
-    
+    font-family: var(--Font1);
+    color: white;
 }
 
-.button-con-group button:nth-child(2){
+.button-con-group a{
+    width: 40%;
+    color: white;
+    text-transform: initial;
     background-color: #eeeeee;
     color: #666666;
+    
 }
