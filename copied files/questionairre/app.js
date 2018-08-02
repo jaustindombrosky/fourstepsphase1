@@ -29,7 +29,7 @@ app.set("view engine","ejs");
 
 // To serve static files such as images, CSS files, and JavaScript files,
 // use the express.static built-in middleware function in Express
-// dirname return the current directory, iniside which public folder
+// dirname return the current directory, inside which public folder
 app.use(express.static(path.resolve(__dirname,'public')));
 
 // use res.sendFile(__dirname+"/form.html")
