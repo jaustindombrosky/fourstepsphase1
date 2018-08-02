@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jaustindombrosky/fourstepsphase1#readme",
   "dependencies": {
+    "dotenv": "^6.0.0",
     "graph": "^0.2.0"
   }
 }
