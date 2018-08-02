@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<% item.forEach(function(item){ %>
+        <ul>
+          <li> <%= item.generalInfo %> </li>
+          <li> <%= item.income %> </li>
+          <li> <%= item.expenses %> </li>
+          <li> <%= item.savings %> </li>
+          <li> <%= item.liabilities %> </li>
+        </ul>
+<% }) %>
+
+
+<a href ="http://localhost:3000/">go back</a>
+
+</body>
+</html>
