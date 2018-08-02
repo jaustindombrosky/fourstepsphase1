@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FourSteps | Register</title>
+    <link rel="stylesheet"  href="../../assets/global.css" />
+    <link rel="stylesheet"  href="../../assets/register.css" />
+    <link rel="stylesheet"  href="../../assets/header-logged-out.css" />
+    <link rel="stylesheet"  href="../../assets/footer.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../../node_modules/materialize-css/dist/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" />
+    <!-- <link rel="stylesheet" href="../assets/materialize/css/materialize.css" /> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <header id="masthead">
+                <div id="mast-nav">
+                        <div class="navbar-header">
+    
+                          <div class="mast-brand">
+                              <img width="194" height="36" class="logo-container" src="../assets/images/logos/foursteps-header-img.svg"/>
+                          </div>
+                        </div>
+                        <div  class="collapse navbar-collapse mast-list-con" id="bs-example-navbar-collapse-1">
+                          <div class="navbar-links">
+                            <ul class="navbar-links-inner">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="portfolio.html">The FourSteps</a></li> 
+                                <li><a href="contact.html">Blog</a></li>
+                            </ul>
+    
+                            <div class="login-sign-group">
+                                <a href="login.html" id="login-btn" class="waves-effect waves-light btn-flat">Login</a> 
+                                <a href="register.html" id="signup-btn" class="waves-effect waves-light btn-flat"> Sign Up</a>
+                            </div>
+    
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+            </header>
+    <div class="content-container">
+        <h1 class="entry-title">Register</h2>
+            <div class="entry-wrapper">
+                <section class="register-form">
+                    <div class="row">
+                        <div class="input-field">
+                            <input id="firstname_inline" name="firstname" type="text" class="validate">
+                            <label id="firstname-label" for="firstname_inline">First Name</label>
+                            <span id="firstname-helper-text" class="helper-text"></span>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                                <input id="lastname_inline" name="lastname" type="text" class="validate">
+                                <label id="lastname-label" for="lastname_inline">Last Name</label>
+                                <span id="lastname-helper-text" class="helper-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field">
+                                <input id="emailaddress_inline" name="email" type="email" class="validate">
+                                <label id="emailaddress-label" for="emailaddress_inline">Email Address</label>
+                                <span id="emailaddress-helper-text" class="helper-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field">
+                                <input id="phonenumber_inline" name="phone" type="text" class="validate">
+                                <label id="phonenumber-label" for="phonenumber_inline">Phone Number</label>
+                                <span id="phonenumber-helper-text" class="helper-text"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="input-field">
+                                <input name="password" id="password_inline" type="password" class="validate">
+                                <label id="password-label" for="password_inline">Password</label>
+                                <!-- <span class="helper-text" data-error="wrong" data-success="right">Helper text</span> -->
+                                <span id="password-helper-text" id="password-helper-text"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="input-field">
+                                    <input name="password2" id="confirmpassword_inline" type="password" class="validate">
+                                    <label id="confirmpassword-label" for="confirmpassword_inline">Confirm Password</label>
+                                    <span id="confirmpassword-helper-text" class="helper-text"></span>
+                        </div>
+                    </div>
+
+                    <div class="button-con-group">
+                            <button onclick='onSubmit()' class="waves-effect waves-light btn-flat">Register</button>
+                            <a href="login.html" class="waves-effect waves-light btn-flat">Log In</a>
+                    </div>
+
+                </section>
+            </div>
+            <footer class="footer-container">
+                    <div class="footer-list-item">
+                        <label>Contact</label>
+                        <ul class="footer-list">
+                                <li> info@foursteps.io </li>
+                        </ul>
+                    </div>
+            </footer>
+
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+    <script>
+        let errorColor = '#FA403C';
+
+        const firstNameIDs = {
+            inputField: document.getElementById('firstname_inline'),
+            label: document.getElementById('firstname-label'),
+            helpertext: document.getElementById('firstname-helper-text')
+        }
+
+        const lastNameIDs = {
+            inputField: document.getElementById('lastname_inline'),
+            label: document.getElementById('lastname-label'),
+            helpertext: document.getElementById('lastname-helper-text')
+        }
+
+
+        const emailIDs = {
+            inputField: document.getElementById('emailaddress_inline'),
+            label: document.getElementById('emailaddress-label'),
+            helpertext: document.getElementById('emailaddress-helper-text')
+        }
+
+
+        const phoneIDs = {
+            inputField: document.getElementById('phonenumber_inline'),
+            label: document.getElementById('phonenumber-label'),
+            helpertext: document.getElementById('phonenumber-helper-text')
+        }
+
+        const passwordIDs = {
+            inputField: document.getElementById('password_inline'),
+            label: document.getElementById('password-label'),
+            helpertext: document.getElementById('password-helper-text')
+        }
+
+        const password2IDs = {
+            inputField: document.getElementById('confirmpassword_inline'),
+            label: document.getElementById('confirmpassword-label'),
+            helpertext: document.getElementById('confirmpassword-helper-text')
+        }
+
+
+        let errors = {}
+
+        let newUser = {
+            firstname: '',
+            lastname: '',
+            email: '',
+            password: '',
+            password2: ''
+        }
+        
+        firstNameIDs.inputField.onkeyup = function() {onChange("firstname_inline")};
+        lastNameIDs.inputField.onkeyup = function() {onChange("lastname_inline")};
+        emailIDs.inputField.onkeyup = function() {onChange("emailaddress_inline")};
+        phoneIDs.inputField.onkeyup = function() {onChange("phonenumber_inline")};
+        passwordIDs.inputField.onkeyup = function() {onChange("password_inline")};
+        password2IDs.inputField.onkeyup = function() {onChange("confirmpassword_inline")};
+        
+
+        function showErrors(object, error){
+            let { inputField, label, helpertext } = object;
+            inputField.style.borderBottom = `1px solid ${errorColor}`;
+            inputField.style.boxShadow = `0 1px 0 0 ${errorColor}`
+            label.style.color = errorColor;
+            helpertext.style.color = errorColor;
+            helpertext.innerHTML = error;
+            errors[error] = error;
+            console.log(errors)
+        }
+
+
+        function onChange(id) {
+            let e = document.getElementById(id);
+            let name = e.name;
+            let value = e.value;
+            newUser[name] = value
+            console.log(newUser)
+        }
+
+        function onSubmit(){
+         axios.post(`http://localhost:5000/api/users/register`, newUser)
+            .then(res => {
+                console.log(res.data)
+            })
+            .catch(err => {
+                let { firstname, lastname, phone, email, password, password2 } = err.response.data;
+                if(firstname){
+                    showErrors(firstNameIDs, firstname)
+                }
+                if(lastname){
+                    showErrors(lastNameIDs, lastname)
+                }
+                if(email){
+                    showErrors(emailIDs, email)
+                }
+                if(phone){
+                    showErrors(phoneIDs, phone)
+                }
+                if(password){
+                    showErrors(passwordIDs, password)
+                }
+                if(password2){
+                    showErrors(password2IDs, password2)
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>

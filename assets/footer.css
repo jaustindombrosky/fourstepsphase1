@@ -1,0 +1,36 @@
+:root{
+    --Font1: 'Poppins', 'sans-serif';
+    --Font2: 'Libre Franklin', 'sans-serif';
+    --GreenColor: #3DB488;
+    --GreyColor1: #707070;
+
+}
+
+.footer-container{
+    display: flex;
+    height: 121.54px;
+    width: 100%;
+    background: #F2F2F2;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.footer-list-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-list{
+    margin: 0px;
+}
+
+.footer-list li {
+    font-family: var(--Font2);
+}
+
+.footer-list-item label{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: var(--Font1);
+    color: #707070;
+}
