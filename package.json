@@ -2,7 +2,7 @@
   "name": "fourstepsphase1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,17 @@
   },
   "homepage": "https://github.com/jaustindombrosky/fourstepsphase1#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "consolidate": "^0.15.1",
+    "cookie-parser": "^1.4.3",
     "dotenv": "^6.0.0",
-    "graph": "^0.2.0"
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "graph": "^0.2.0",
+    "http-errors": "^1.7.0",
+    "mongoose": "^5.2.6",
+    "morgan": "^1.9.0",
+    "mustache": "^2.3.0",
+    "path": "^0.12.7"
   }
 }

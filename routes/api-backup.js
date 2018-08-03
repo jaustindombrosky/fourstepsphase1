@@ -1,8 +1,8 @@
 var express = require('express')
-var api = express();
+var router = express.Router()
 var Profile = require('../models/Profile')
 
-api.post('/:resource', function (req, res, next){
+router.post('/:resource', function (req, res, next){
     var resource = req.params.resource
     if (resource == 'profile'){ //create profile
 
@@ -33,7 +33,7 @@ api.post('/:resource', function (req, res, next){
         message: 'Resource '+resource+' not supported.'
     })
 })
-api.get('/:resource', function (req, res, next) {
+router.get('/:resource', function (req, res, next) {
     var resource = req.params.resource
     if (resource == 'profile') { //request for profile
     Profile.find(null, function (err, profiles) {
@@ -62,7 +62,7 @@ api.get('/:resource', function (req, res, next) {
     })
 })
 
-api.get('/:resource/:id', function(req, res, next){
+router.get('/:resource/:id', function(req, res, next){
     var resource = req.params. resource
     var id = req.params.id
 
@@ -98,4 +98,4 @@ api.get('/:resource/:id', function(req, res, next){
         message: 'Resource '+resource+' not supported.'
     })
 })
-module.exports = api;
+module.exports = router
