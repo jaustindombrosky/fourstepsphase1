@@ -8,56 +8,32 @@ var mongoose = require('mongoose');
 var delegateRoutes = require('./routes/delegateRoutes');
 var bodyParser = require('body-parser')
 
-//when deployed change the localhost
-
-
-// mongoose
-//     .connect(dbUrl)
-//     .then(() => console.log('MongoDB Connected') )
-//     .catch(err => console.log(err))
-
-// var routes = require('./routes/index');
-// var api = require('./routes/api');
 
 var app = express();
 
-
-
-// view engine setup
-var engines = require('consolidate');
 
 app.engine('html', require('ejs').renderFile);
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-// app.use(logger('dev'));
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-
 app.use(cookieParser());
 
 
 
+// DB CONFIG
+const db = require('./config/keys').mongoURI;
 
-
-// app.get('/', function (req, res)
-// {
-//     res.render('home.html');
-// });
-
+// Connect to MongoDB
+mongoose
+    .connect(db)
+    .then(() => console.log('MongoDB Connected') )
+    .catch(err => console.log(err))
 
 
 delegateRoutes(app);
 
-// app.use('/', routes);
-// app.use('/api', api);
-
-// catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//   next(createError(404));
-// });
 
 
 

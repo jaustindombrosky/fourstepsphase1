@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jaustindombrosky/fourstepsphase1#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "consolidate": "^0.15.1",
     "cookie-parser": "^1.4.3",
@@ -25,9 +26,12 @@
     "express": "^4.16.3",
     "graph": "^0.2.0",
     "http-errors": "^1.7.0",
+    "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.2.6",
     "morgan": "^1.9.0",
     "mustache": "^2.3.0",
-    "path": "^0.12.7"
+    "passport": "^0.4.0",
+    "path": "^0.12.7",
+    "validator": "^10.5.0"
   }
 }

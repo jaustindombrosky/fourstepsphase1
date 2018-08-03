@@ -13,9 +13,6 @@ pages.get('/register', function(req, res) { res.render("register.html") });
 // MY COMMENTS ARENT AS GOOD AS MAYANKS
 pages.get('/discover', function(req, res) { res.render("discover.html") });
 
-
-
-
 // GET HOME PAGE
 pages.get('/', function(req, res) { res.render("home.html") });
 
