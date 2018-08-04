@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d --out-dir public/"
   },
   "repository": {
     "type": "git",
@@ -17,13 +17,16 @@
   },
   "homepage": "https://github.com/jaustindombrosky/fourstepsphase1#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "consolidate": "^0.15.1",
     "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
     "dotenv": "^6.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "fetch-jsonp": "^1.1.3",
     "graph": "^0.2.0",
     "http-errors": "^1.7.0",
     "jsonwebtoken": "^8.3.0",
@@ -32,6 +35,13 @@
     "mustache": "^2.3.0",
     "passport": "^0.4.0",
     "path": "^0.12.7",
+    "request": "^2.87.0",
     "validator": "^10.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1"
   }
 }

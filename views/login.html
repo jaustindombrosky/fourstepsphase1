@@ -66,8 +66,12 @@
                         </div>
                     </div>
 
+                            <button onclick="onSubmit()" href="login.html" class="waves-effect waves-light btn-flat">Log In</button>
+
 
                 </section>
+
+
             </div>
             <footer class="footer-container">
                     <div class="footer-list-item">
@@ -85,35 +89,20 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="./utils/setAuthToken.js"></script>
+    <script src="js/jwt-decode.min.js"></script>
+
 
 
     <script>
+        
+    
         let errorColor = '#FA403C';
-
-        const firstNameIDs = {
-            inputField: document.getElementById('firstname_inline'),
-            label: document.getElementById('firstname-label'),
-            helpertext: document.getElementById('firstname-helper-text')
-        }
-
-        const lastNameIDs = {
-            inputField: document.getElementById('lastname_inline'),
-            label: document.getElementById('lastname-label'),
-            helpertext: document.getElementById('lastname-helper-text')
-        }
-
 
         const emailIDs = {
             inputField: document.getElementById('emailaddress_inline'),
             label: document.getElementById('emailaddress-label'),
             helpertext: document.getElementById('emailaddress-helper-text')
-        }
-
-
-        const phoneIDs = {
-            inputField: document.getElementById('phonenumber_inline'),
-            label: document.getElementById('phonenumber-label'),
-            helpertext: document.getElementById('phonenumber-helper-text')
         }
 
         const passwordIDs = {
@@ -122,29 +111,17 @@
             helpertext: document.getElementById('password-helper-text')
         }
 
-        const password2IDs = {
-            inputField: document.getElementById('confirmpassword_inline'),
-            label: document.getElementById('confirmpassword-label'),
-            helpertext: document.getElementById('confirmpassword-helper-text')
-        }
 
 
         let errors = {}
 
-        let newUser = {
-            firstname: '',
-            lastname: '',
+        let user = {
             email: '',
             password: '',
-            password2: ''
         }
-        
-        firstNameIDs.inputField.onkeyup = function() {onChange("firstname_inline")};
-        lastNameIDs.inputField.onkeyup = function() {onChange("lastname_inline")};
+
         emailIDs.inputField.onkeyup = function() {onChange("emailaddress_inline")};
-        phoneIDs.inputField.onkeyup = function() {onChange("phonenumber_inline")};
         passwordIDs.inputField.onkeyup = function() {onChange("password_inline")};
-        password2IDs.inputField.onkeyup = function() {onChange("confirmpassword_inline")};
         
 
         function showErrors(object, error){
@@ -163,35 +140,33 @@
             let e = document.getElementById(id);
             let name = e.name;
             let value = e.value;
-            newUser[name] = value
-            console.log(newUser)
+            user[name] = value
+            console.log(user)
         }
 
         function onSubmit(){
-         axios.post(`http://localhost:5000/api/users/register`, newUser)
+         axios.post(`api/users/login`, user)
             .then(res => {
-                console.log(res.data)
+                    // Save to localStorage
+                    // const { token } = res.data;
+                    // localStorage.setItem('jwtToken', token);
+                    // Set token to Auth header
+                    // setAuthToken(token);
+                    // Decode token to get user data
+                    // const decoded = jwt_decode(token);
+                    // Set current user
+                    window.location.href = "/discover";
             })
             .catch(err => {
-                let { firstname, lastname, phone, email, password, password2 } = err.response.data;
-                if(firstname){
-                    showErrors(firstNameIDs, firstname)
-                }
-                if(lastname){
-                    showErrors(lastNameIDs, lastname)
-                }
+                console.log(err)
+                let { email, password } = err.response.data;
                 if(email){
                     showErrors(emailIDs, email)
-                }
-                if(phone){
-                    showErrors(phoneIDs, phone)
                 }
                 if(password){
                     showErrors(passwordIDs, password)
                 }
-                if(password2){
-                    showErrors(password2IDs, password2)
-                }
+
             });
         }
 
